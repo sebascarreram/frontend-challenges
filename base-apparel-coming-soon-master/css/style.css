@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;600&display=swap");
+@keyframes comeinleft {
+  to {
+    transform: translateX(0); } }
+
+@keyframes comeinright {
+  to {
+    transform: translateX(0);
+    opacity: 1; } }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  background-image: linear-gradient(135deg, white, #fff5f5);
+  font-family: "Josefin Sans", sans-serif; }
+
+.container {
+  display: flex;
+  min-height: 100vh; }
+
+.left {
+  background-image: url("./../images/bg-pattern-desktop.svg");
+  background-position: center center;
+  background-size: cover;
+  padding: 0 4rem 4rem;
+  width: 60%; }
+  .left__inner__container {
+    max-width: 45rem;
+    margin: auto;
+    margin-top: 7rem;
+    flex-direction: column;
+    /* make main axis vertical */
+    justify-content: center;
+    /* center items vertically, in this case */
+    align-items: center; }
+  .left__logo {
+    margin: 6rem 0;
+    width: 20rem; }
+    @media screen and (max-width: 37.5em) {
+      .left__logo {
+        margin: 3rem 0;
+        width: 10rem; } }
+  .left__title {
+    text-transform: uppercase;
+    font-size: 6rem;
+    letter-spacing: 1rem;
+    line-height: 1.1;
+    color: #413a3a;
+    margin-bottom: 0;
+    transform: translateX(-100%);
+    animation: comeinleft 0.5s ease forwards; }
+    @media screen and (max-width: 37.5em) {
+      .left__title {
+        font-size: 4rem;
+        margin-top: 2.5rem; } }
+    .left__title-span {
+      color: #ce9797;
+      font-weight: 200; }
+  .left__resumen {
+    color: #ce9797;
+    line-height: 2.6rem;
+    margin: 3rem 0;
+    font-size: 1.6rem;
+    transform: translateX(100%);
+    opacity: 0;
+    animation: comeinright 0.5s ease forwards; }
+  @media screen and (max-width: 37.5em) {
+    .left {
+      width: 100%; } }
+
+.right {
+  width: 40%; }
+  @media screen and (max-width: 37.5em) {
+    .right {
+      display: none; } }
+
+.bg-image {
+  background-image: url("./../images/hero-desktop.jpg");
+  background-position: center center;
+  background-size: cover; }
+
+.bg-mobile {
+  display: none; }
+  @media screen and (max-width: 37.5em) {
+    .bg-mobile {
+      display: block;
+      width: calc(100% + 80px);
+      margin-left: -4rem;
+      margin-right: -4rem; } }
+
+form {
+  position: relative;
+  transform: translateX(-100%);
+  animation: comeinleft 0.5s ease forwards; }
+
+.form__input {
+  background-color: transparent;
+  border: 1px solid #ce9797;
+  border-radius: 5rem;
+  font-size: 1.6rem;
+  padding: 1.5rem 3rem;
+  width: 100%;
+  height: 5.5rem; }
+  .form__input:focus {
+    border-width: 2px;
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(206, 151, 151, 0.5); }
+  .form__input::placeholder {
+    color: #ce9797; }
+
+.error-icon {
+  display: none;
+  position: absolute;
+  top: 1.5rem;
+  right: 11rem; }
+
+.form__btn {
+  box-shadow: 2px 5px 10px rgba(206, 151, 151, 0.5);
+  background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  cursor: pointer;
+  padding: 1.5rem;
+  border: none;
+  border-radius: 5rem;
+  width: 10rem;
+  height: 5.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: opacity 0.2s; }
+  .form__btn:hover {
+    opacity: 0.6;
+    box-shadow: 2px 5px 10px rgba(154, 106, 106, 0.5); }
+
+.form__small {
+  font-size: 1.2rem;
+  display: none;
+  margin-top: 1.5rem;
+  margin-left: 3rem;
+  color: #f96262; }
+
+form.error .form__input {
+  border-radius: 2px solid #f96262; }
+
+form.error .error-icon {
+  display: block; }
+
+form.error .form__small {
+  display: block; }
