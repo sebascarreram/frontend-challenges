@@ -1,0 +1,224 @@
+header {
+  background-color: hsl(193, 100%, 96%);
+  background-image: url("./../images/bg-hero-desktop.svg");
+  background-position: center center;
+  background-size: cover;
+
+  // height: 80vh;
+  padding: 4rem 0;
+}
+
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
+}
+
+main p {
+  opacity: 0.8;
+  @include respond(phone) {
+    margin-bottom: 2rem;
+  }
+}
+
+.btn {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+
+  font-size: 1.6rem;
+  font-weight: 700;
+
+  padding: 15px 60px;
+  cursor: pointer;
+
+  border-radius: 50px;
+  border: none;
+}
+.btn-primary {
+  background-color: hsl(322, 100%, 66%);
+  color: #fff;
+
+  margin-top: 2rem;
+
+  @include respond(phone) {
+    margin: 2rem 0;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.header-img {
+  width: 80%;
+  margin-left: 20%;
+  @include respond(phone) {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.container {
+  padding: 0 2rem;
+  margin: 0 auto;
+
+  max-width: 100%;
+  width: 1000px;
+}
+.center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  // flex-wrap: wrap;
+  align-items: center;
+
+  @include respond(phone) {
+    flex-direction: column;
+  }
+}
+
+.flex > div,
+.flex > ul {
+  flex: 1;
+
+  // justify-content: center;
+  // align-items: center;
+  // align-content: center;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-start > ul {
+  &:not(:last-child) {
+    margin-right: 3rem;
+  }
+}
+
+.align-start > div {
+  &:not(:last-child) {
+    margin-right: 2.5rem;
+  }
+}
+
+nav {
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+
+  @include respond(phone) {
+    &.flex {
+      flex-direction: row;
+    }
+  }
+}
+
+.box {
+  background-color: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+
+  margin: 4rem 0;
+  padding: 6rem;
+
+  & img {
+    width: 80%;
+  }
+}
+
+.small-box {
+  display: inline-block;
+
+  position: relative;
+  // margin-bottom: -50% or transform: translateY(50%);
+  // they are same
+  margin-bottom: -50%;
+  // transform: translateY(50%);
+  //
+  z-index: 1;
+}
+
+footer {
+  background-color: hsl(192, 100%, 9%);
+  color: #fff;
+
+  padding: 180px 0 60px;
+
+  @include respond(phone) {
+    & ul.flex {
+      flex-direction: row;
+    }
+  }
+
+  & ul {
+    list-style-type: none;
+
+    @include respond(phone) {
+      width: 100%;
+    }
+
+    & li {
+      margin-bottom: 2rem;
+
+      & span {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  & .circle {
+    border: 1px solid #fff;
+    border-radius: 50%;
+
+    margin-right: 1rem;
+
+    color: #fff;
+
+    // display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 4rem;
+    height: 4rem;
+
+    text-decoration: none;
+  }
+
+  & p {
+    text-align: right;
+
+    @include respond(phone) {
+      text-align: center;
+    }
+  }
+}
+
+.logo-bottom {
+  margin-bottom: 2.5rem;
+}
+
+.box-reverse-mobile {
+  @include respond(phone) {
+    flex-direction: column-reverse;
+  }
+}
+
+footer .social-media {
+  display: flex;
+  @include respond(phone) {
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+.test {
+  text-indent: -22px;
+
+  &-1 {
+    vertical-align: middle;
+  }
+}
