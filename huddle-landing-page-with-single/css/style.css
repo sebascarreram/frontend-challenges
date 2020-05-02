@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Poppins:400,700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #fff; }
+
+body {
+  background-image: url("./../images/bg-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #674baf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100vh; }
+
+.header {
+  padding: 4rem 0; }
+  .header__btn {
+    background-color: #fff;
+    padding: 1.5rem 6rem;
+    border: none;
+    border-radius: 50px;
+    color: #674baf;
+    font-size: 1.3rem;
+    font-weight: 400;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.4);
+    transition: all 0.2s; }
+    .header__btn:hover {
+      background-color: #cfcccc; }
+
+@media only screen and (max-width: 48em) {
+  .mobile-btn {
+    text-align: center; } }
+
+.container {
+  padding: 0 2rem;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1250px; }
+
+nav {
+  margin-bottom: 6rem; }
+
+.flex {
+  display: flex;
+  align-items: center; }
+  @media only screen and (max-width: 48em) {
+    .flex {
+      flex-direction: column; } }
+  .flex img.image {
+    max-width: 100%; }
+  .flex-left {
+    margin-right: 3rem; }
+    @media only screen and (max-width: 48em) {
+      .flex-left {
+        margin-right: 0; } }
+
+.flex > div {
+  flex: 1; }
+
+.logo {
+  max-width: 100%; }
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 2rem; }
+  @media only screen and (max-width: 48em) {
+    h1 {
+      font-size: 3rem; } }
+
+p {
+  font-size: 1.5rem;
+  opacity: 0.8;
+  margin-bottom: 2rem; }
+
+.social {
+  display: flex;
+  justify-content: flex-end; }
+  @media only screen and (max-width: 48em) {
+    .social {
+      margin-top: 8rem;
+      display: flex;
+      justify-content: center; } }
+  .social__list {
+    list-style-type: none; }
+    @media only screen and (max-width: 48em) {
+      .social__list {
+        flex-direction: row; } }
+  .social__item:not(:last-child) {
+    margin-right: 2.5rem; }
+    @media only screen and (max-width: 48em) {
+      .social__item:not(:last-child) {
+        margin-right: 1.5rem; } }
+  .social__link {
+    color: #fff;
+    font-size: 1.4rem;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    width: 4rem;
+    height: 4rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; }
+    .social__link:hover {
+      color: #2980b9;
+      border-color: #a29bfe; }
