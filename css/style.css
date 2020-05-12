@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+body {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  background-color: #fefefe;
+  padding: 3rem 2.5rem; }
+
+html {
+  font-family: "Raleway", sans-serif; }
+
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: auto; }
+  .container h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem; }
+  .container h2 {
+    position: relative;
+    font-size: 1.5rem; }
+    .container h2::after {
+      content: "";
+      border-radius: 10px;
+      background-color: #000;
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      height: 4px;
+      width: 60px; }
+
+ul {
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none; }
+  ul a {
+    color: #000;
+    text-decoration: none; }
+  ul img {
+    display: block;
+    height: 200px;
+    width: 350px;
+    object-fit: cover;
+    transition: transform 0.3s ease; }
+  ul li.box {
+    margin: 1.5rem;
+    width: 350px;
+    background-color: #fff;
+    box-shadow: 0 4px 40px 0px rgba(0, 0, 0, 0.15); }
+    ul li.box p {
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 1.2rem; }
+    ul li.box div.links-container {
+      padding: 1.2rem;
+      margin-top: 2rem; }
+      ul li.box div.links-container a {
+        text-decoration: none;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 1.8rem;
+        height: 1.8rem;
+        transition: transform 0.2s ease; }
+        ul li.box div.links-container a:not(:last-child) {
+          margin-right: 0.2rem; }
+        ul li.box div.links-container a:hover {
+          transform: scale(1.2); }
+        ul li.box div.links-container a.eye {
+          background-color: #3498db; }
+        ul li.box div.links-container a.youtube {
+          background-color: #e74c3c; }
+        ul li.box div.links-container a li {
+          font-size: 1.3rem;
+          color: #fff; }
+
+footer {
+  background-color: #222;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem; }
+  footer a {
+    color: #fff;
+    font-size: 1rem; }
+  footer i {
+    color: red; }
