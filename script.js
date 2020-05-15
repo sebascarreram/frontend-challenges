@@ -26,6 +26,10 @@ const projects = [
   {
     name: "huddle-landing-page-with-single",
     youtube_url: "https://www.youtube.com"
+  },
+  {
+    name: "fylo-landing-page",
+    youtube_url: "https://www.youtube.com"
   }
 ];
 
