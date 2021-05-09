@@ -1,47 +1,14 @@
-const projects = [
-  {
-    name: "four-card-feature-section-master",
-    youtube_url: "https://www.youtube.com/"
-  },
-  {
-    name: "base-apparel-coming-soon-master",
-    youtube_url: "https://www.youtube.com"
-  },
-  {
-    name: "signup-form-master",
-    youtube_url: "https://www.youtube.com"
-  },
-  {
-    name: "single-price-grid-component-master",
-    youtube_url: "https://www.youtube.com"
-  },
-  {
-    name: "ping-coming-soon-page-master",
-    youtube_url: "https://www.youtube.com"
-  },
-  {
-    name: "huddle-landing-page",
-    youtube_url: "https://www.youtube.com"
-  },
-  {
-    name: "huddle-landing-page-with-single",
-    youtube_url: "https://www.youtube.com"
-  },
-  {
-    name: "fylo-landing-page",
-    youtube_url: "https://www.youtube.com"
-  }
-];
+import { projects } from "./projects.js";
 
 const list = document.getElementById("list");
 
-projects.forEach(({ name, youtube_url }, i) => {
+projects.forEach(({ name, github_url: github_url }, i) => {
   const listItem = document.createElement("li");
   listItem.className = "box";
   // listItem.innerHTML = `${i + 1}. ${formatProjectName(name)}`;
 
   listItem.innerHTML = `
-   <a href="/${name}/index.html">
+    <a href="/${name}/index.html">
       <img src=/${name}/design/desktop-design.jpg />
       <p>${i + 1}. ${formatProjectName(name)}</p>
     </a>
@@ -49,8 +16,8 @@ projects.forEach(({ name, youtube_url }, i) => {
       <a href="/${name}/index.html" class="eye">
         <li class="fas fa-eye"></li>
       </a>
-      <a target="_blank" href=${youtube_url} class="youtube">
-        <li class="fab fa-youtube"></li>
+      <a target="_blank" href=${github_url} class="github">
+        <li class="fab fa-github"></li>
       </a>
     </div>
   `;
@@ -69,6 +36,6 @@ projects.forEach(({ name, youtube_url }, i) => {
 function formatProjectName(name) {
   return name
     .split("-")
-    .map(word => word[0].toUpperCase() + word.slice(1))
+    .map((word) => word[0].toUpperCase() + word.slice(1))
     .join(" ");
 }
