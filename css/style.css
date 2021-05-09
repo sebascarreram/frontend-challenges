@@ -77,8 +77,8 @@ ul {
           transform: scale(1.2); }
         ul li.box div.links-container a.eye {
           background-color: #3498db; }
-        ul li.box div.links-container a.youtube {
-          background-color: #e74c3c; }
+        ul li.box div.links-container a.github {
+          background-color: #000; }
         ul li.box div.links-container a li {
           font-size: 1.3rem;
           color: #fff; }
