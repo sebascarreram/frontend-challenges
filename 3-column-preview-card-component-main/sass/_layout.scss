@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+main {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+
+  @include respond(phone) {
+    padding: 1rem;
+  }
+}
+
+.card {
+  display: flex;
+  max-width: 65rem;
+  min-height: 35rem;
+  height: 100%;
+  border-radius: 10px;
+  border-top-left-radius: 15px;
+
+  @include respond(phone) {
+    flex-direction: column;
+  }
+
+  &__orange {
+    background-color: hsl(31, 77%, 52%);
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+
+    @include respond(phone) {
+      border-top-right-radius: 15px;
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 15px;
+    }
+  }
+  &__greenLight {
+    background-color: hsl(184, 100%, 22%);
+  }
+  &__greenDark {
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+
+    @include respond(phone) {
+      border-bottom-right-radius: 15px;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 15px;
+    }
+  }
+
+  &-1 {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: space-between;
+
+    @include respond(phone) {
+      padding: 1.7rem;
+      height: 30rem;
+    }
+
+    & img {
+      display: inline-block;
+      width: 80px;
+      height: auto;
+    }
+
+    & h2 {
+      font-size: 2.6rem;
+      color: hsl(0, 0%, 95%);
+      font-family: "Big Shoulders Display", cursive;
+      margin-top: -3rem;
+      margin-bottom: -3rem;
+    }
+  }
+
+  &__paragraph {
+    font-size: 1.1rem;
+    font-weight: 100;
+    margin-bottom: 5rem;
+    color: hsla(0, 0%, 100%, 0.75);
+
+    @include respond(phone) {
+      margin-bottom: 3rem;
+      font-size: 1rem;
+    }
+  }
+}
+
+.button {
+  display: inline-block;
+  padding: 0.9rem 1.1rem;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  font-weight: 800;
+  max-width: 9rem;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+
+  &__orange {
+    color: hsl(31, 77%, 52%);
+
+    &:hover {
+      background-color: hsl(31, 77%, 52%);
+      color: hsl(0, 0%, 95%);
+      border: 2px solid hsl(0, 0%, 95%);
+    }
+  }
+  &__greenLight {
+    color: hsl(184, 100%, 22%);
+
+    &:hover {
+      background-color: hsl(184, 100%, 22%);
+      color: hsl(0, 0%, 95%);
+      border: 2px solid hsl(0, 0%, 95%);
+    }
+  }
+  &__greenDark {
+    color: hsl(179, 100%, 13%);
+    &:hover {
+      background-color: hsl(179, 100%, 13%);
+      color: hsl(0, 0%, 95%);
+      border: 2px solid hsl(0, 0%, 95%);
+    }
+  }
+}
