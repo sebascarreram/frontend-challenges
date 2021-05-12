@@ -41,4 +41,8 @@ export const projects = [
     name: "3-column-preview-card-component-main",
     github_url: `${url}/3-column-preview-card-component-main`,
   },
+  {
+    name: "profile-card-component-main",
+    github_url: `${url}/profile-card-component-main`,
+  },
 ];
