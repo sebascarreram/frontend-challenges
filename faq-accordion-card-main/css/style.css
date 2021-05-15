@@ -1,0 +1,236 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+1em = 16px
+*/
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+body {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  min-height: 100vh;
+  background: #dd3e54;
+  background: -webkit-linear-gradient(to bottom, #af67e9, #6565e7);
+  background: linear-gradient(to bottom, #af67e9, #6565e7); }
+
+html {
+  font-family: "Kumbh Sans", sans-serif; }
+
+main {
+  min-height: 100vh;
+  width: 100%;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*@if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }*/
+  /*@if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }*/ }
+  @media only screen and (max-width: 56.25em) {
+    main {
+      padding: 2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    main {
+      padding: 0.5rem; } }
+
+.card {
+  background: white;
+  background-image: url("./../images/bg-pattern-desktop.svg");
+  background-position: -35rem -17rem;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  max-width: 65rem;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  /*@if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }*/
+  /*@if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }*/ }
+  @media only screen and (max-width: 56.25em) {
+    .card {
+      background: white url("./../images/bg-pattern-mobile.svg") top center no-repeat;
+      background-size: 17rem;
+      background-position: top center;
+      flex-direction: column;
+      overflow: inherit;
+      margin-top: 11rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .card {
+      background-size: 15rem; } }
+
+.imagen-woman {
+  height: 21rem;
+  margin: auto 0;
+  display: block;
+  margin-left: -4.5rem;
+  /*@if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }*/ }
+  .imagen-woman-mobile {
+    display: none;
+    /*@if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }*/
+    /*@if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }*/ }
+    @media only screen and (max-width: 56.25em) {
+      .imagen-woman-mobile {
+        display: block;
+        width: 23rem;
+        margin: -9.3rem auto 0 auto; } }
+    @media only screen and (max-width: 37.5em) {
+      .imagen-woman-mobile {
+        width: 20rem;
+        margin: -7.3rem auto 0 auto; } }
+  @media only screen and (max-width: 56.25em) {
+    .imagen-woman {
+      display: none; } }
+
+.imagen-box {
+  position: absolute;
+  margin-top: 14rem;
+  margin-left: -5.8rem;
+  /*@if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }*/ }
+  @media only screen and (max-width: 56.25em) {
+    .imagen-box {
+      display: none; } }
+
+.imagen-desktop {
+  width: 55rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-80%, -53%); }
+
+.title {
+  font-size: 3rem;
+  /*@if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }*/
+  /*@if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }*/ }
+  @media only screen and (max-width: 56.25em) {
+    .title {
+      text-align: center;
+      margin-bottom: 1rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .title {
+      font-size: 2rem; } }
+
+.right {
+  padding: 5rem 2rem;
+  width: 100%;
+  margin-left: 11rem;
+  /*@if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }*/
+  /*@if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }*/
+  /*@if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }*/ }
+  @media only screen and (max-width: 75em) {
+    .right {
+      margin-left: 3rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .right {
+      margin: 4rem 0 0 0;
+      padding: 0 2rem 2.5rem 2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .right {
+      padding: 0 1.4rem 2.5rem 1.4rem; } }
+
+.group {
+  width: 100%; }
+  .group-1 {
+    cursor: pointer;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #787887; }
+    .group-1::after {
+      content: "";
+      background: url("./../images/icon-arrow-down.svg") no-repeat;
+      width: 10px;
+      height: 7px;
+      display: block;
+      float: right; }
+    .group-1:not(:last-of-type) {
+      margin-bottom: 1rem; }
+    .group-1 h2 {
+      font-size: 1.2rem;
+      display: inline-block;
+      /*@if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }*/
+      /*@if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }*/ }
+      .group-1 h2:hover {
+        color: #f47c57; }
+      @media only screen and (max-width: 75em) {
+        .group-1 h2 {
+          font-size: 1.1rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .group-1 h2 {
+          font-size: 1rem; } }
+    .group-1 p {
+      display: none; }
