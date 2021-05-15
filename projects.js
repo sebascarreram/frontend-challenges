@@ -45,4 +45,8 @@ export const projects = [
     name: "profile-card-component-main",
     github_url: `${url}/profile-card-component-main`,
   },
+  {
+    name: "faq-accordion-card-main",
+    github_url: `${url}/profile-card-component-main`,
+  },
 ];
