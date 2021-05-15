@@ -51,7 +51,8 @@ main {
   }*/ }
   @media only screen and (max-width: 56.25em) {
     main {
-      padding: 2rem; } }
+      padding: 2rem;
+      margin-bottom: 2rem; } }
   @media only screen and (max-width: 37.5em) {
     main {
       padding: 0.5rem; } }

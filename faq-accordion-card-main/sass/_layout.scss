@@ -11,6 +11,7 @@ main {
 
   @include respond(tab-port) {
     padding: 2rem;
+    margin-bottom: 2rem;
   }
   @include respond(phone) {
     padding: 0.5rem;
@@ -171,5 +172,5 @@ main {
 }
 
 .active:after {
-  transform: rotate(180deg)
+  transform: rotate(180deg);
 }
