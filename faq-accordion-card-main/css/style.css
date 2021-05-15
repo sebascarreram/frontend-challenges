@@ -198,22 +198,15 @@ main {
   .group-1 {
     cursor: pointer;
     padding: 1rem 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     border-bottom: 1px solid #787887; }
-    .group-1::after {
-      content: "";
-      background: url("./../images/icon-arrow-down.svg") no-repeat;
-      width: 10px;
-      height: 7px;
-      display: block;
-      float: right; }
     .group-1:not(:last-of-type) {
       margin-bottom: 1rem; }
     .group-1 h2 {
       font-size: 1.2rem;
-      display: inline-block;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
       /*@if $breakpoint == big-desktop {
     @media only screen and (min-width: 112.5em) {
       @content;
@@ -224,6 +217,13 @@ main {
       @content;
     } //1800
   }*/ }
+      .group-1 h2::after {
+        content: "";
+        background: url("./../images/icon-arrow-down.svg") no-repeat;
+        width: 10px;
+        height: 7px;
+        display: block;
+        float: right; }
       .group-1 h2:hover {
         color: #f47c57; }
       @media only screen and (max-width: 75em) {
@@ -233,4 +233,7 @@ main {
         .group-1 h2 {
           font-size: 1rem; } }
     .group-1 p {
-      display: none; }
+      width: 94%;
+      margin-top: 0.8rem;
+      font-size: 0.9rem;
+      display: block; }
