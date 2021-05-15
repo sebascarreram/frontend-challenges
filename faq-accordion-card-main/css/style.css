@@ -90,9 +90,9 @@ main {
 
 .imagen-woman {
   height: 21rem;
-  margin: auto 0;
   display: block;
   margin-left: -4.5rem;
+  margin-top: 6rem;
   /*@if $breakpoint == big-desktop {
     @media only screen and (min-width: 112.5em) {
       @content;
@@ -125,7 +125,7 @@ main {
 
 .imagen-box {
   position: absolute;
-  margin-top: 14rem;
+  margin-top: 13rem;
   margin-left: -5.8rem;
   /*@if $breakpoint == big-desktop {
     @media only screen and (min-width: 112.5em) {
@@ -236,4 +236,9 @@ main {
       width: 94%;
       margin-top: 0.8rem;
       font-size: 0.9rem;
-      display: none; }
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out; }
+
+.active:after {
+  transform: rotate(180deg); }
