@@ -1,0 +1,25 @@
+* *::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+body {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  min-height: 100vh;
+  background: hsl(0, 0%, 100%);
+
+  background-image: url("./../images/bg-pattern-top-desktop.svg"),
+    url("./../images/bg-pattern-bottom-desktop.svg");
+  //background-position: top -14rem left -14rem, bottom -14rem right -14rem;
+  background-position: top 0 left 0, bottom 0 right 0;
+
+  background-repeat: no-repeat, no-repeat;
+  //  background-size: cover, cover;
+  background-size: 50rem, 50rem;
+  margin: 0;
+}
+
+html {
+  font-family: 'Spartan', sans-serif;}
