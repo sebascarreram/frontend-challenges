@@ -90,12 +90,20 @@ header {
     @media only screen and (min-width: 112.5em) {
       @content;
     } //1800
+  }*/
+  /*@if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
   }*/ }
   @media only screen and (max-width: 75em) {
     .right {
-      width: 100%;
       max-width: 100%;
       margin-top: 1rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .right {
+      padding: 0 1rem;
+      width: 100%; } }
 
 .review {
   display: flex;
@@ -103,7 +111,16 @@ header {
   width: 26rem;
   padding: 0.5rem 1.5rem;
   background-color: #f7f2f7;
-  border-radius: 10px; }
+  border-radius: 10px;
+  /*@if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }*/ }
+  @media only screen and (max-width: 37.5em) {
+    .review {
+      width: 100%;
+      padding: 0.5rem 1rem; } }
   .review:not(:last-of-type) {
     margin-bottom: 1rem; }
   .review-2 {
@@ -131,7 +148,15 @@ header {
     align-items: center;
     margin-right: 1.5rem; }
     .review__startGroup-start:not(:last-of-type) {
-      margin-right: 1.2rem; }
+      margin-right: 1.2rem;
+      /*@if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }*/ }
+      @media only screen and (max-width: 37.5em) {
+        .review__startGroup-start:not(:last-of-type) {
+          margin-right: 1rem; } }
     .review__startGroup-about {
       font-size: 0.8rem;
       font-weight: 700;
