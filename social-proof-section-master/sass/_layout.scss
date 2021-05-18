@@ -3,7 +3,7 @@
 header {
   //  margin-top: 4rem;
   max-width: 90rem;
-  height: 55vh;
+  min-height: 55vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,6 +16,7 @@ header {
   @include respond(tab-port) {
     flex-direction: column;
     text-align: center;
+    margin-top: 3rem;
   }
 }
 

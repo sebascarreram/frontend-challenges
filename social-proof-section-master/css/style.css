@@ -36,7 +36,7 @@ html {
 
 header {
   max-width: 90rem;
-  height: 55vh;
+  min-height: 55vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,7 +58,8 @@ header {
   @media only screen and (max-width: 56.25em) {
     header {
       flex-direction: column;
-      text-align: center; } }
+      text-align: center;
+      margin-top: 3rem; } }
 
 .left {
   max-width: 31%;
