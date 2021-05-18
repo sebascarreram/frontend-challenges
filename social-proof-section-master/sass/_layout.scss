@@ -115,6 +115,7 @@ main {
 
   @include respond(phone) {
     flex-direction: column;
+    padding: 1rem;
   }
 }
 .card {
@@ -125,6 +126,9 @@ main {
 
   @include respond(tab-port){
     padding: 1.5rem;
+  }
+  @include respond(phone){
+    width: 100%;
   }
 
   &:not(:last-of-type) {
