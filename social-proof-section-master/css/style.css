@@ -35,15 +35,42 @@ html {
   font-family: 'Spartan', sans-serif; }
 
 header {
-  width: 100%;
-  min-height: 55vh;
+  max-width: 90rem;
+  height: 55vh;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin: 0 auto;
+  /*@if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }*/
+  /*@if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }*/ }
+  @media only screen and (max-width: 75em) {
+    header {
+      padding: 0 1.5rem;
+      width: 100%; } }
+  @media only screen and (max-width: 56.25em) {
+    header {
+      flex-direction: column;
+      text-align: center; } }
 
 .left {
   max-width: 31%;
-  width: 100%; }
+  /*@if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }*/ }
+  @media only screen and (max-width: 75em) {
+    .left {
+      width: 100%;
+      max-width: 100%; } }
   .left__title {
     font-size: 2.4rem;
     color: #502050;
@@ -55,10 +82,19 @@ header {
 
 .right {
   max-width: 45%;
-  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  /*@if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }*/ }
+  @media only screen and (max-width: 75em) {
+    .right {
+      width: 100%;
+      max-width: 100%;
+      margin-top: 1rem; } }
 
 .review {
   display: flex;
@@ -70,9 +106,25 @@ header {
   .review:not(:last-of-type) {
     margin-bottom: 1rem; }
   .review-2 {
-    margin-left: 1.7rem; }
+    margin-left: 1.7rem;
+    /*@if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }*/ }
+    @media only screen and (max-width: 56.25em) {
+      .review-2 {
+        margin-left: 0; } }
   .review-3 {
-    margin-left: 2.7rem; }
+    margin-left: 2.7rem;
+    /*@if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }*/ }
+    @media only screen and (max-width: 56.25em) {
+      .review-3 {
+        margin-left: 0; } }
   .review__startGroup {
     display: flex;
     align-items: center;
@@ -84,22 +136,82 @@ header {
       font-weight: 700;
       color: #502050; }
 
+main {
+  width: 100%;
+  /*@if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }*/ }
+  @media only screen and (max-width: 75em) {
+    main {
+      padding: 1rem; } }
+
 .container {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  /*@if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }*/ }
+  @media only screen and (max-width: 37.5em) {
+    .container {
+      flex-direction: column; } }
 
 .card {
   width: 19rem;
   background-color: #502050;
   padding: 2rem;
-  border-radius: 8px; }
+  border-radius: 8px;
+  /*@if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }*/ }
+  @media only screen and (max-width: 56.25em) {
+    .card {
+      padding: 1.5rem; } }
   .card:not(:last-of-type) {
-    margin-right: 1.4rem; }
+    margin-right: 1.4rem;
+    /*@if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }*/ }
+    @media only screen and (max-width: 37.5em) {
+      .card:not(:last-of-type) {
+        margin: 1rem 0 0 0; } }
+  .card:last-of-type {
+    /*@if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }*/ }
+    @media only screen and (max-width: 37.5em) {
+      .card:last-of-type {
+        margin-top: 1rem; } }
   .card-2 {
-    margin-top: 2rem; }
+    margin-top: 2rem;
+    /*@if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }*/ }
+    @media only screen and (max-width: 56.25em) {
+      .card-2 {
+        margin-top: 0; } }
   .card-3 {
-    margin-top: 3rem; }
+    margin-top: 3rem;
+    /*@if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }*/ }
+    @media only screen and (max-width: 56.25em) {
+      .card-3 {
+        margin-top: 0; } }
   .card__personal {
     display: flex;
     align-items: center; }
