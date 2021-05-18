@@ -53,4 +53,8 @@ export const projects = [
     name: "social-proof-section-master",
     github_url: `${url}/faq-accordion-card-main`,
   },
+  {
+    name: "article-preview-component-master",
+    github_url: `${url}/social-proof-section-master`,
+  },
 ];
