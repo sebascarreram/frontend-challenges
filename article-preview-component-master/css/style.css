@@ -155,3 +155,42 @@ main {
   background-color: #ecf2f8;
   padding: 0.5rem;
   border-radius: 50%; }
+
+.social {
+  background-color: #48556a;
+  min-width: 14rem;
+  height: 3rem;
+  padding: 0 1rem;
+  border-radius: 9px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-bottom: 7.5rem;
+  margin-left: 16rem;
+  transition: all 0.2s; }
+  .social:after {
+    content: " ";
+    position: absolute;
+    right: 83px;
+    bottom: -15px;
+    border-top: 15px solid #48556a;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: none; }
+  .social__share {
+    color: #9eafc2;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-right: 1rem;
+    letter-spacing: 2px; }
+  .social__link:not(:last-of-type) {
+    margin-right: 1rem; }
+  .social__icon {
+    width: 1.5rem;
+    height: 1.5rem; }
+    .social__icon:hover {
+      fill: red; }
+
+.active {
+  display: flex; }
