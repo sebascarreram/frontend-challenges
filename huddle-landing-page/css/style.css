@@ -35,6 +35,10 @@ main p {
     main p {
       margin-bottom: 2rem; } }
 
+@media screen and (max-width: 48em) {
+  .logo {
+    width: 16rem; } }
+
 .btn {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
@@ -44,6 +48,10 @@ main p {
   cursor: pointer;
   border-radius: 50px;
   border: none; }
+  @media screen and (max-width: 48em) {
+    .btn {
+      font-size: 1.4rem;
+      padding: 13px 25px; } }
 
 .btn-primary {
   background-color: #ff52bf;
