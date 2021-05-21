@@ -14,18 +14,20 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #fff; }
 
-body {
+.header {
+  display: flex;
+  align-items: flex-start;
   background-image: url("./../images/bg-desktop.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #674baf;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 100vh; }
-
-.header {
-  padding: 4rem 0; }
+  padding: 4rem 0;
+  height: 100vh; }
+  @media only screen and (max-width: 48em) {
+    .header {
+      width: 100%;
+      height: 100%;
+      padding: 3rem 0; } }
   .header__btn {
     background-color: #fff;
     padding: 1.5rem 6rem;
@@ -45,12 +47,17 @@ body {
 
 .container {
   padding: 0 2rem;
-  margin: 0 auto;
-  max-width: 100%;
-  width: 1250px; }
+  margin: 0 auto; }
+  @media only screen and (max-width: 48em) {
+    .container {
+      padding: 0 1.5rem; } }
 
 nav {
   margin-bottom: 6rem; }
+  @media only screen and (max-width: 48em) {
+    nav {
+      display: flex;
+      justify-content: center; } }
 
 .flex {
   display: flex;
