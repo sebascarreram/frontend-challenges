@@ -57,4 +57,8 @@ export const projects = [
     name: "article-preview-component-master",
     github_url: `${url}/social-proof-section-master`,
   },
+  {
+    name: "blogr-landing-page-main",
+    github_url: `${url}/blogr-landing-page-main`
+  }
 ];
