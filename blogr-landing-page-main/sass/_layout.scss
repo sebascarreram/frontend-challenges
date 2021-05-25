@@ -1,0 +1,128 @@
+.header {
+  background: hsl(353, 100%, 62%);
+  background-image: url("./../images/bg-pattern-intro.svg"),
+    linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: left;
+  width: 100%;
+  height: 65rem;
+  border-bottom-left-radius: 12rem;
+}
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+  width: 100%;
+  height: 11rem;
+  padding: 0 10rem;
+
+  &__left {
+  }
+  &__right {
+  }
+
+  &__logo {
+    margin-right: 5rem;
+  }
+  &__btn {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 1.7rem;
+  }
+  &__dropdown {
+    &:not(:last-of-type) {
+      margin-right: 3rem;
+    }
+    &--content {
+      display: none;
+    }
+    &--signLoging {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__login {
+    margin-right: 3rem;
+  }
+  &__signUp {
+    padding: 1rem 3rem;
+    background: white;
+    color: hsl(356, 100%, 66%) !important;
+    border-radius: 20px;
+    border: 1px solid transparent;
+
+    &:hover {
+      background: hsl(356, 100%, 66%);
+      color: hsl(0, 0%, 100%) !important;
+      border: 1px solid hsl(0, 0%, 100%);
+    }
+  }
+  &__link {
+    &:visited,
+    &:link {
+      color: hsl(0, 0%, 100%);
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.title {
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Overpass", sans-serif;
+
+  & h1 {
+    font-size: 4rem;
+  }
+  & h4 {
+    font-size: 1.7rem;
+    font-weight: 300;
+  }
+
+  &__btn {
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 1.7rem;
+    padding: 1.1rem 3rem;
+  }
+  &__free {
+    color: hsl(356, 100%, 66%);
+    margin-right: 1rem;
+    border: 1px solid transparent;
+
+    &:hover {
+      background: hsl(356, 100%, 66%);
+      color: hsl(0, 0%, 100%);
+      border: 1px solid hsl(0, 0%, 100%);
+    }
+  }
+  &__more {
+    background: hsl(356, 100%, 66%);
+    border: 1px solid hsl(0, 0%, 100%);
+
+    &:hover {
+    }
+  }
+  &__groupBtn {
+    margin-top: 7rem;
+  }
+}
