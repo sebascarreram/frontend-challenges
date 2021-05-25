@@ -1,0 +1,38 @@
+.header {
+  background: hsl(353, 100%, 62%);
+  background-image: url("./../images/bg-pattern-intro.svg"),
+    linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: left;
+  width: 100%;
+  height: 67rem;
+  border-bottom-left-radius: 12rem;
+}
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Overpass", sans-serif;
+  color: white;
+
+  & h1 {
+    font-size: 4rem;
+  }
+  & h4 {
+    font-size: 1.7rem;
+    font-weight: 300;
+  }
+
+  &__groupBtn {
+    margin-top: 7rem;
+  }
+}

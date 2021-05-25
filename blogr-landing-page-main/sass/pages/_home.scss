@@ -1,0 +1,20 @@
+.section-introdution {
+  padding: 15rem 0;
+}
+.introdution {
+  &__left {
+    max-width: 50rem;
+  }
+  &__right {
+    position: absolute;
+    right: -38rem;
+  }
+  &__desktop {
+    width: 85em;
+  }
+}
+
+.section-phones {
+}
+.section-computer {
+}

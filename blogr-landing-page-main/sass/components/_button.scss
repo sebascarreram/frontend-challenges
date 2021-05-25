@@ -1,0 +1,41 @@
+.btn {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    padding: 1.5rem 5rem;
+    display: inline-block;
+    border-radius: 10rem;
+    position: relative;
+    font-size: 1.6rem;
+		font-weight: 600;
+
+    //border: none;
+    cursor: pointer;
+  }
+
+  &--white {
+    background-color: white;
+    color: hsl(356, 100%, 66%);
+    border: 1px solid transparent;
+
+    &:hover {
+      background: hsl(356, 100%, 66%);
+      color: hsl(0, 0%, 100%);
+      border: 1px solid hsl(0, 0%, 100%);
+    }
+  }
+  &--red {
+    background-color: hsl(356, 100%, 66%);
+    color: white;
+    border: 1px solid hsl(0, 0%, 100%);
+
+    &:hover {
+      background: hsl(0, 0%, 100%);
+			color: hsl(356, 100%, 66%);
+    }
+  }
+
+	&--transparent{
+		color: white;	
+	}
+}
