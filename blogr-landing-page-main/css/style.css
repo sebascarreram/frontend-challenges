@@ -27,21 +27,31 @@ body {
   font-family: "Overpass", sans-serif;
   font-size: 3.5rem;
   font-weight: 600;
-  color: #1f3f5b;
   display: inline-block;
-  backface-visibility: hidden;
-  margin-bottom: 6rem; }
+  backface-visibility: hidden; }
+  .heading-secondary--blueDark {
+    color: #1f3f5b; }
+  .heading-secondary--light {
+    color: white; }
 
 .heading-tertiary {
   font-family: "Overpass", sans-serif;
   font-weight: 300;
   font-size: 2rem;
-  font-weight: 700;
-  color: #1f3f5b; }
+  font-weight: 700; }
+  .heading-tertiary--dark {
+    color: #1f3f5b; }
+  .heading-tertiary--light {
+    color: white; }
 
 .paragraph {
-  font-size: 1.6rem;
-  color: #4b5862; }
+  font-size: 1.6rem; }
+  .paragraph--light {
+    color: white; }
+  .paragraph--gray {
+    color: #c8c8cb; }
+  .paragraph--darkMediom {
+    color: #4b5862; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
@@ -99,6 +109,23 @@ body {
 
 .btn--transparent {
   color: white; }
+
+.footer {
+  background-color: #25252d;
+  border-top-right-radius: 12rem;
+  padding: 15rem 5rem;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.4rem; }
+  .footer div:last-child {
+    margin-right: 17rem; }
+  .footer__list {
+    list-style-type: none; }
+  .footer__item:not(:last-child) {
+    margin-bottom: 1rem; }
+  .footer__link:link, .footer__link:visited {
+    color: #c8c8cb;
+    text-decoration: none; }
 
 .header {
   background: #ff3d54;
@@ -179,7 +206,37 @@ body {
 
 .introdution__right {
   position: absolute;
-  right: -38rem; }
+  right: -15rem;
+  width: 62rem;
+  overflow: hidden; }
 
 .introdution__desktop {
   width: 85em; }
+
+.section-phones {
+  background-image: url("./../../images/bg-pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-size: 104rem;
+  background-position: -22rem -48rem;
+  background-color: #2c2d3f;
+  border-top-right-radius: 12rem;
+  border-bottom-left-radius: 12rem; }
+
+.phones__left {
+  margin-bottom: -11rem;
+  margin-top: -6rem; }
+
+.phones__right {
+  margin-left: 4rem;
+  max-width: 60rem; }
+
+.computer__left {
+  margin-left: -45rem;
+  width: 62rem; }
+
+.computer__right {
+  max-width: 60rem;
+  margin-left: 45rem; }
+
+.computer__image {
+  width: 105rem; }

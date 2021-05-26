@@ -1,5 +1,6 @@
 .section-introdution {
   padding: 15rem 0;
+  //  overflow: hidden;
 }
 .introdution {
   &__left {
@@ -7,7 +8,9 @@
   }
   &__right {
     position: absolute;
-    right: -38rem;
+    right: -15rem;
+    width: 62rem;
+    overflow: hidden;
   }
   &__desktop {
     width: 85em;
@@ -15,6 +18,39 @@
 }
 
 .section-phones {
+  background-image: url("./../../images/bg-pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-size: 104rem;
+  background-position: -22rem -48rem;
+  background-color: hsl(237, 17%, 21%);
+  border-top-right-radius: 12rem;
+  border-bottom-left-radius: 12rem;
+}
+
+.phones {
+  &__left {
+    margin-bottom: -11rem;
+    margin-top: -6rem;
+  }
+  &__right {
+    margin-left: 4rem;
+    max-width: 60rem;
+  }
 }
 .section-computer {
+}
+
+.computer {
+  &__left {
+    margin-left: -45rem;
+    width: 62rem;
+  }
+  &__right {
+    max-width: 60rem;
+    margin-left: 45rem;
+  }
+
+  &__image {
+    width: 105rem;
+  }
 }

@@ -1,0 +1,29 @@
+.footer {
+  background-color: hsl(240, 10%, 16%);
+  border-top-right-radius: 12rem;
+  padding: 15rem 5rem;
+  display: flex;
+  justify-content: space-around;
+  //justify-content: space-evenly;
+  font-size: 1.4rem;
+
+  & div:last-child {
+    margin-right: 17rem;
+  }
+
+  &__list {
+    list-style-type: none;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+  &__link {
+    &:link,
+    &:visited {
+      color: hsl(240, 2%, 79%);
+      text-decoration: none;
+    }
+  }
+}

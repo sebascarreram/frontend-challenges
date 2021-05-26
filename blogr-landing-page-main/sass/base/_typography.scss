@@ -13,11 +13,16 @@ body {
   font-family: "Overpass", sans-serif;
   font-size: 3.5rem;
   font-weight: 600;
-  color: hsl(208, 49%, 24%);
   display: inline-block;
 
   backface-visibility: hidden;
-  margin-bottom: 6rem;
+
+  &--blueDark {
+    color: hsl(208, 49%, 24%);
+  }
+  &--light {
+    color: hsl(0, 0%, 100%);
+  }
 }
 .heading-tertiary {
   //  font-size: $default-font-size;
@@ -26,13 +31,28 @@ body {
   //  font-size: 1.7;
   font-size: 2rem;
   font-weight: 700;
-  color: hsl(208, 49%, 24%);
+
+  &--dark {
+    color: hsl(208, 49%, 24%);
+  }
+  &--light {
+    color: hsl(0, 0%, 100%);
+  }
 }
 
 .paragraph {
   //font-size: $default-font-size;
   font-size: 1.6rem;
-  color: hsl(207, 13%, 34%);
+
+  &--light {
+    color: hsl(0, 0%, 100%);
+  }
+  &--gray {
+    color: hsl(240, 2%, 79%);
+  }
+  &--darkMediom {
+    color: hsl(207, 13%, 34%);
+  }
 
   &:not(:last-child) {
     margin-bottom: 3rem;
