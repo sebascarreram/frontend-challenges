@@ -1,3 +1,17 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+ORDER: Base + typography > general layout + grid > page layout > components
+1em = 16px
+*/
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
 *,
 *::before,
@@ -166,6 +180,8 @@ body {
   padding: 0 10rem; }
   .nav__logo {
     margin-right: 5rem; }
+  .nav__arrow {
+    transition: all .2s; }
   .nav__btn {
     border: none;
     background: transparent;
@@ -173,10 +189,31 @@ body {
     color: white;
     font-weight: 600;
     font-size: 1.7rem; }
+  .nav__dropdown:hover .nav__dropdown--content {
+    display: flex; }
+  .nav__dropdown:hover .nav__arrow {
+    transform: rotate(180deg); }
   .nav__dropdown:not(:last-of-type) {
     margin-right: 3rem; }
   .nav__dropdown--content {
-    display: none; }
+    display: none;
+    border-radius: 6px;
+    flex-direction: column;
+    position: absolute;
+    background: white;
+    padding: 2rem 2.5rem;
+    width: 12.5rem; }
+  .nav__dropdown--link:visited, .nav__dropdown--link:link {
+    font-family: "Overpass", sans-serif;
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: black;
+    text-decoration: none; }
+    .nav__dropdown--link:visited:not(:last-of-type), .nav__dropdown--link:link:not(:last-of-type) {
+      margin-bottom: 1rem; }
+    .nav__dropdown--link:visited:hover, .nav__dropdown--link:link:hover {
+      font-weight: 700; }
   .nav__dropdown--signLoging {
     display: flex;
     align-items: center; }
