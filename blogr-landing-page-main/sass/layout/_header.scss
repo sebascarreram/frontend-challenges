@@ -9,6 +9,10 @@
   height: 67rem;
   border-bottom-left-radius: 12rem;
 
+  @include respond(phone) {
+    height: 95vh;
+  }
+
   &__container {
     max-width: 114rem;
     margin: 0 auto;
