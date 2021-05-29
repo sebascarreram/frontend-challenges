@@ -17,6 +17,9 @@
 .u-margin-top-huge {
   margin-top: 10rem !important;
 }
+.u-margin-top-rest {
+  margin-top: -15rem !important;
+}
 .container {
   max-width: 114rem;
   //max-width: $grid-width;
@@ -24,4 +27,10 @@
   align-items: center;
   margin: 0 auto;
   position: relative;
+  @include respond(tab-port) {
+    flex-direction: column;
+    margin-top: 0 !important;
+    padding: 0 1.5rem;
+    text-align: center;
+  }
 }

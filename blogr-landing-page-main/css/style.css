@@ -87,12 +87,21 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
+.u-margin-top-rest {
+  margin-top: -15rem !important; }
+
 .container {
   max-width: 114rem;
   display: flex;
   align-items: center;
   margin: 0 auto;
   position: relative; }
+  @media only screen and (max-width: 56.25em) {
+    .container {
+      flex-direction: column;
+      margin-top: 0 !important;
+      padding: 0 1.5rem;
+      text-align: center; } }
 
 .btn:link, .btn:visited {
   text-decoration: none;
@@ -126,13 +135,29 @@ body {
 
 .footer {
   background-color: #25252d;
-  border-top-right-radius: 12rem;
-  padding: 15rem 5rem;
-  display: flex;
-  justify-content: space-around;
-  font-size: 1.4rem; }
+  border-top-right-radius: 12rem; }
+  .footer__container {
+    max-width: 114rem;
+    padding: 15rem 5rem;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.4rem;
+    margin: 0 auto; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; } }
   .footer div:last-child {
-    margin-right: 17rem; }
+    /*@include respond(tab-port) {
+      margin-right: 0 !important;
+    }
+    @include respond(big-desktop) {
+      margin-right: 0 !important;
+    }*/ }
+  @media only screen and (max-width: 56.25em) {
+    .footer div:not(:last-of-type) {
+      margin-bottom: 2.5rem; } }
   .footer__list {
     list-style-type: none; }
   .footer__item:not(:last-child) {
@@ -140,6 +165,8 @@ body {
   .footer__link:link, .footer__link:visited {
     color: #c8c8cb;
     text-decoration: none; }
+    .footer__link:link:hover, .footer__link:visited:hover {
+      border-bottom: 1px solid #c8c8cb; }
 
 .header {
   background: #ff3d54;
@@ -150,6 +177,9 @@ body {
   width: 100%;
   height: 67rem;
   border-bottom-left-radius: 12rem; }
+  .header__container {
+    max-width: 114rem;
+    margin: 0 auto; }
 
 .flexCenter {
   display: flex;
@@ -162,14 +192,101 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Overpass", sans-serif;
-  color: white; }
+  color: white;
+  padding: 0 1.5rem;
+  text-align: center; }
   .title h1 {
-    font-size: 4rem; }
+    font-size: 4rem;
+    line-height: 1.2; }
+    @media only screen and (max-width: 37.5em) {
+      .title h1 {
+        font-size: 3.5rem; } }
   .title h4 {
     font-size: 1.7rem;
     font-weight: 300; }
   .title__groupBtn {
     margin-top: 7rem; }
+
+.navMobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  width: 100%;
+  height: 11rem;
+  padding: 0 5rem;
+  position: relative; }
+  @media only screen and (min-width: 56.25em) {
+    .navMobile {
+      display: none; } }
+  .navMobile__btn {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: #1f3f5b;
+    font-weight: 600;
+    font-size: 1.7rem; }
+  .navMobile__card {
+    position: fixed;
+    z-index: 999999999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    width: 100%;
+    max-width: 50rem;
+    min-height: 40rem;
+    border-radius: 6px;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 1px 4px 8px 0 rgba(0, 0, 0, 0.2); }
+  .navMobile__dropdown:not(:last-of-type) {
+    margin-bottom: 2rem; }
+  .navMobile__dropdown--content {
+    display: none;
+    background: #c8c8cb;
+    padding: 1rem;
+    flex-direction: column;
+    border-radius: 6px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out; }
+  .navMobile__logo {
+    cursor: pointer; }
+  .navMobile__lines {
+    position: fixed;
+    z-index: 888888;
+    cursor: pointer;
+    background: #3f4164;
+    right: 5rem;
+    padding: 2rem;
+    border-radius: 5px;
+    background-image: url("./../../images/icon-hamburger.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.2s; }
+
+.active {
+  display: flex; }
+
+.close {
+  background-image: url("./../../images/icon-close.svg"); }
+
+.backgroundDark {
+  display: none;
+  position: fixed;
+  background-color: #7a8085;
+  height: 100vh;
+  width: 100%;
+  z-index: 99999;
+  opacity: 0.7; }
+
+.backgroundDark--active {
+  display: block; }
 
 .nav {
   display: flex;
@@ -178,6 +295,9 @@ body {
   width: 100%;
   height: 11rem;
   padding: 0 10rem; }
+  @media only screen and (max-width: 56.25em) {
+    .nav {
+      display: none; } }
   .nav__logo {
     margin-right: 5rem; }
   .nav__arrow {
@@ -235,20 +355,34 @@ body {
     text-decoration: none;
     font-size: 1.8rem; }
 
+main {
+  overflow: hidden; }
+
 .section-introdution {
   padding: 15rem 0; }
 
 .introdution__left {
-  max-width: 50rem; }
+  max-width: 53rem;
+  margin-right: 2rem; }
+  @media only screen and (max-width: 56.25em) {
+    .introdution__left {
+      order: 2;
+      margin-top: 1rem; } }
 
 .introdution__right {
-  position: absolute;
-  right: -15rem;
   width: 62rem;
-  overflow: hidden; }
+  position: relative; }
+  @media only screen and (max-width: 56.25em) {
+    .introdution__right {
+      margin-top: -15rem; } }
 
 .introdution__desktop {
-  width: 85em; }
+  width: 85em;
+  margin-left: 15rem; }
+  @media only screen and (max-width: 56.25em) {
+    .introdution__desktop {
+      margin-left: 0;
+      width: 100%; } }
 
 .section-phones {
   background-image: url("./../../images/bg-pattern-circles.svg");
@@ -262,18 +396,38 @@ body {
 .phones__left {
   margin-bottom: -11rem;
   margin-top: -6rem; }
+  @media only screen and (max-width: 56.25em) {
+    .phones__left {
+      margin-top: -10rem; } }
 
 .phones__right {
   margin-left: 4rem;
   max-width: 60rem; }
+  @media only screen and (max-width: 56.25em) {
+    .phones__right {
+      margin-top: 10rem;
+      margin-left: 0;
+      margin-bottom: 7rem;
+      text-align: center; } }
 
 .computer__left {
   margin-left: -45rem;
   width: 62rem; }
+  @media only screen and (max-width: 56.25em) {
+    .computer__left {
+      margin-left: 0;
+      margin-top: 5rem; } }
 
 .computer__right {
   max-width: 60rem;
   margin-left: 45rem; }
+  @media only screen and (max-width: 56.25em) {
+    .computer__right {
+      margin-left: 0;
+      text-align: center; } }
 
 .computer__image {
   width: 105rem; }
+  @media only screen and (max-width: 56.25em) {
+    .computer__image {
+      width: 100%; } }

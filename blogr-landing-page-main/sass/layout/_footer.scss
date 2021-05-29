@@ -1,14 +1,38 @@
 .footer {
   background-color: hsl(240, 10%, 16%);
+
   border-top-right-radius: 12rem;
-  padding: 15rem 5rem;
-  display: flex;
-  justify-content: space-around;
-  //justify-content: space-evenly;
-  font-size: 1.4rem;
+  &__container {
+    max-width: 114rem;
+
+    padding: 15rem 5rem;
+    display: flex;
+    justify-content: space-around;
+    //justify-content: space-evenly;
+    font-size: 1.4rem;
+    margin: 0 auto;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
 
   & div:last-child {
-    margin-right: 17rem;
+    //    margin-right: 17rem;
+    /*@include respond(tab-port) {
+      margin-right: 0 !important;
+    }
+    @include respond(big-desktop) {
+      margin-right: 0 !important;
+    }*/
+  }
+
+  @include respond(tab-port) {
+    & div:not(:last-of-type) {
+      margin-bottom: 2.5rem;
+    }
   }
 
   &__list {
@@ -24,6 +48,10 @@
     &:visited {
       color: hsl(240, 2%, 79%);
       text-decoration: none;
+
+      &:hover {
+        border-bottom: 1px solid hsl(240, 2%, 79%);
+      }
     }
   }
 }

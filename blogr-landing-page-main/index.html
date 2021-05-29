@@ -16,20 +16,20 @@
     <title>Frontend Mentor | [Blogr]</title>
   </head>
   <body>
+    <div class="backgroundDark"></div>
     <header class="header">
-      <nav class="nav">
-        <div class="flexCenter nav__left">
-          <img class="nav__logo" src="./images/logo.svg" alt="logo" />
-          <div class="nav__dropdown">
-            <button class="nav__btn" type="submit">
+      <div class="header__container">
+        <div class="navMobile__card">
+          <div class="navMobile__dropdown">
+            <button class="navMobile__btn" type="submit">
               Product
               <img
-                class="nav__arrow"
-                src="./images/icon-arrow-light.svg"
+                class="navMobile__arrow"
+                src="./images/icon-arrow-dark.svg"
                 alt="Icon of arrow"
               />
             </button>
-            <div class="nav__dropdown--content">
+            <div class="navMobile__dropdown--content">
               <a class="nav__dropdown--link" href="#">Overview</a>
               <a class="nav__dropdown--link" href="#">Pricing</a>
               <a class="nav__dropdown--link" href="#">Marketplace</a>
@@ -37,51 +37,108 @@
               <a class="nav__dropdown--link" href="#">Integrations</a>
             </div>
           </div>
-          <div class="nav__dropdown">
-            <button class="nav__btn" type="submit">
+          <div class="navMobile__dropdown">
+            <button class="navMobile__btn" type="submit">
               Company
               <img
-                class="nav__arrow"
-                src="./images/icon-arrow-light.svg"
+                class="navMobile__arrow"
+                src="./images/icon-arrow-dark.svg"
                 alt="Icon of arrow"
               />
             </button>
-            <div class="nav__dropdown--content">
+            <div class="navMobile__dropdown--content">
               <a class="nav__dropdown--link" href="#">About</a>
               <a class="nav__dropdown--link" href="#">Team</a>
               <a class="nav__dropdown--link" href="#">Blog</a>
               <a class="nav__dropdown--link" href="#">Careers</a>
             </div>
           </div>
-          <div class="nav__dropdown">
-            <button class="nav__btn" type="submit">
+          <div class="navMobile__dropdown">
+            <button class="navMobile__btn" type="submit">
               Connect
               <img
-                class="nav__arrow"
-                src="./images/icon-arrow-light.svg"
+                class="navMobile__arrow"
+                src="./images/icon-arrow-dark.svg"
                 alt="Icon of arrow"
               />
             </button>
-            <div class="nav__dropdown--content">
+            <div class="navMobile__dropdown--content">
               <a class="nav__dropdown--link" href="#">Contact</a>
               <a class="nav__dropdown--link" href="#">Newsletter</a>
               <a class="nav__dropdown--link" href="#">LinkedIn</a>
             </div>
           </div>
         </div>
-        <div class="flexCenter nav__right">
-          <div class="nav__dropdown--signLoging">
-            <a class="btn btn--transparent" href="#">Login</a>
-            <a class="btn btn--white" href="#">Sign Up</a>
+        <nav class="navMobile">
+          <img class="navMobile__logo" src="./images/logo.svg" alt="logo" />
+          <div class="navMobile__lines"></div>
+        </nav>
+        <nav class="nav">
+          <div class="flexCenter nav__left">
+            <img class="nav__logo" src="./images/logo.svg" alt="logo" />
+            <div class="nav__dropdown">
+              <button class="nav__btn" type="submit">
+                Product
+                <img
+                  class="nav__arrow"
+                  src="./images/icon-arrow-light.svg"
+                  alt="Icon of arrow"
+                />
+              </button>
+              <div class="nav__dropdown--content">
+                <a class="nav__dropdown--link" href="#">Overview</a>
+                <a class="nav__dropdown--link" href="#">Pricing</a>
+                <a class="nav__dropdown--link" href="#">Marketplace</a>
+                <a class="nav__dropdown--link" href="#">Features</a>
+                <a class="nav__dropdown--link" href="#">Integrations</a>
+              </div>
+            </div>
+            <div class="nav__dropdown">
+              <button class="nav__btn" type="submit">
+                Company
+                <img
+                  class="nav__arrow"
+                  src="./images/icon-arrow-light.svg"
+                  alt="Icon of arrow"
+                />
+              </button>
+              <div class="nav__dropdown--content">
+                <a class="nav__dropdown--link" href="#">About</a>
+                <a class="nav__dropdown--link" href="#">Team</a>
+                <a class="nav__dropdown--link" href="#">Blog</a>
+                <a class="nav__dropdown--link" href="#">Careers</a>
+              </div>
+            </div>
+            <div class="nav__dropdown">
+              <button class="nav__btn" type="submit">
+                Connect
+                <img
+                  class="nav__arrow"
+                  src="./images/icon-arrow-light.svg"
+                  alt="Icon of arrow"
+                />
+              </button>
+              <div class="nav__dropdown--content">
+                <a class="nav__dropdown--link" href="#">Contact</a>
+                <a class="nav__dropdown--link" href="#">Newsletter</a>
+                <a class="nav__dropdown--link" href="#">LinkedIn</a>
+              </div>
+            </div>
           </div>
-        </div>
-      </nav>
-      <div class="title">
-        <h1>A modern publishing platform</h1>
-        <h4>Grow your audience and build your online brand</h4>
-        <div class="title__groupBtn">
-          <a class="btn btn--white" href="#">Start for free</a>
-          <a class="btn btn--red" href="#">Learn more</a>
+          <div class="flexCenter nav__right">
+            <div class="nav__dropdown--signLoging">
+              <a class="btn btn--transparent" href="#">Login</a>
+              <a class="btn btn--white" href="#">Sign Up</a>
+            </div>
+          </div>
+        </nav>
+        <div class="title u-margin-top-big">
+          <h1>A modern publishing platform</h1>
+          <h4>Grow your audience and build your online brand</h4>
+          <div class="title__groupBtn">
+            <a class="btn btn--white" href="#">Start for free</a>
+            <a class="btn btn--red" href="#">Learn more</a>
+          </div>
         </div>
       </div>
     </header>
@@ -92,7 +149,7 @@
             Designed for the future
           </h2>
         </div>
-        <div class="container">
+        <div class="container u-margin-top-rest">
           <div class="introdution__left">
             <h3
               class="heading-tertiary heading-tertiary--dark u-margin-bottom-small"
@@ -192,71 +249,73 @@
       </section>
     </main>
     <footer class="footer u-margin-top-huge">
-      <div>
-        <img class="footer__logo" src="./images/logo.svg" alt="Logo" />
-      </div>
-      <div>
-        <h4
-          class="heading-tertiary heading-tertiary--light u-margin-bottom-small"
-        >
-          Product
-        </h4>
-        <ul class="footer__list">
-          <li class="footer__item">
-            <a class="footer__link" href="#">Overview</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">Pricing</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">Marketplace</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">Features</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">Integrations</a>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <h4
-          class="heading-tertiary heading-tertiary--light u-margin-bottom-small"
-        >
-          Company
-        </h4>
-        <ul class="footer__list">
-          <li class="footer__item">
-            <a class="footer__link" href="#">About</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">Team</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">Blog</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">Careers</a>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <h4
-          class="heading-tertiary heading-tertiary--light u-margin-bottom-small"
-        >
-          Connect
-        </h4>
-        <ul class="footer__list">
-          <li class="footer__item">
-            <a class="footer__link" href="#">Contact</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">Newsletter</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">LinkedIn</a>
-          </li>
-        </ul>
+      <div class="footer__container">
+        <div>
+          <img class="footer__logo" src="./images/logo.svg" alt="Logo" />
+        </div>
+        <div>
+          <h4
+            class="heading-tertiary heading-tertiary--light u-margin-bottom-small"
+          >
+            Product
+          </h4>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Overview</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Pricing</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Marketplace</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Features</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Integrations</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4
+            class="heading-tertiary heading-tertiary--light u-margin-bottom-small"
+          >
+            Company
+          </h4>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">About</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Team</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Blog</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Careers</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4
+            class="heading-tertiary heading-tertiary--light u-margin-bottom-small"
+          >
+            Connect
+          </h4>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Contact</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Newsletter</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
     <script src="script.js"></script>
