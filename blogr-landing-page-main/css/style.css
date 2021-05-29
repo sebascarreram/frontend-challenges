@@ -206,6 +206,15 @@ body {
     font-weight: 300; }
   .title__groupBtn {
     margin-top: 7rem; }
+    .title__groupBtn a:last-child {
+      margin-left: 1rem; }
+    @media only screen and (max-width: 37.5em) {
+      .title__groupBtn {
+        display: flex;
+        flex-direction: column; }
+        .title__groupBtn a:last-child {
+          margin-top: 1rem;
+          margin-left: 0; } }
 
 .navMobile {
   display: flex;
@@ -409,6 +418,10 @@ main {
       margin-left: 0;
       margin-bottom: 7rem;
       text-align: center; } }
+
+@media only screen and (max-width: 37.5em) {
+  .phones__image {
+    width: 100%; } }
 
 .computer__left {
   margin-left: -45rem;

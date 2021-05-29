@@ -45,5 +45,19 @@
 
   &__groupBtn {
     margin-top: 7rem;
+
+    & a:last-child {
+      margin-left: 1rem;
+    }
+
+    @include respond(phone) {
+      display: flex;
+      flex-direction: column;
+
+      & a:last-child {
+        margin-top: 1rem;
+        margin-left: 0;
+      }
+    }
   }
 }

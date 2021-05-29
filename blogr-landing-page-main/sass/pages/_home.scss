@@ -62,6 +62,12 @@ main {
       
     }
   }
+
+  &__image{
+    @include respond(phone){
+      width: 100%;
+    }
+  }
 }
 .section-computer {
 }
