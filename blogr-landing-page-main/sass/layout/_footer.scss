@@ -17,6 +17,9 @@
       align-items: center;
       text-align: center;
     }
+    @include respond(phone){
+      height: 100vh;
+    }
   }
 
   & div:last-child {
