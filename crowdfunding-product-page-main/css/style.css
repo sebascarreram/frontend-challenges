@@ -164,7 +164,7 @@ body {
       margin-left: 0.4rem; }
 
 .header {
-  background-image: url("./../../images/image-hero-desktop.jpg");
+  background-image: url("./../images/image-hero-desktop.jpg");
   background-repeat: no-repeat;
   background-position: center;
   height: 39rem; }
