@@ -40,10 +40,26 @@
   display: flex;
   align-items: center;
 
+  /*@include respond(phone){
+    display: none;
+  }*/
+
+  &--text {
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
   &--icon {
     position: absolute;
     z-index: 1;
     height: 5rem;
     margin-left: -1rem;
+    cursor: pointer;
+
+    @include respond(phone){
+      position: initial;
+      margin-left: 0;
+    }
   }
 }

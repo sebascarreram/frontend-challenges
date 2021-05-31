@@ -23,10 +23,19 @@ ORDER: Base + typography > general layout + grid > page layout > components
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   background-image: linear-gradient(135deg, white, #fff5f5);
-  font-family: 'Commissioner', sans-serif; }
+  font-family: "Commissioner", sans-serif; }
 
 body {
   line-height: 1.7; }
@@ -71,6 +80,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (max-width: 37.5em) {
+    .flex {
+      flex-direction: column;
+      align-items: flex-start; } }
 
 .u-center-text {
   text-align: center; }
@@ -124,12 +137,23 @@ body {
 .btnBookmark {
   position: relative;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  /*@include respond(phone){
+    display: none;
+  }*/ }
+  @media only screen and (max-width: 37.5em) {
+    .btnBookmark--text {
+      display: none; } }
   .btnBookmark--icon {
     position: absolute;
     z-index: 1;
     height: 5rem;
-    margin-left: -1rem; }
+    margin-left: -1rem;
+    cursor: pointer; }
+    @media only screen and (max-width: 37.5em) {
+      .btnBookmark--icon {
+        position: initial;
+        margin-left: 0; } }
 
 .card {
   border-radius: 8px;
@@ -157,6 +181,9 @@ body {
       .card__sub--title p {
         font-size: 1.5rem;
         color: #147b74; }
+        @media only screen and (max-width: 37.5em) {
+          .card__sub--title p {
+            margin-top: -0.5rem; } }
     .card__sub--left {
       font-size: 1.9rem;
       font-weight: 400;
@@ -192,17 +219,34 @@ body {
 
 main {
   padding: 4rem; }
+  @media only screen and (max-width: 56.25em) {
+    main {
+      padding: 2rem; } }
 
 .price {
   display: flex;
   justify-content: center; }
+  @media only screen and (max-width: 37.5em) {
+    .price {
+      flex-direction: column;
+      align-items: center; } }
   .price div {
     display: flex;
     flex-direction: column; }
+    @media only screen and (max-width: 37.5em) {
+      .price div {
+        max-width: 30rem; } }
     .price div:not(:first-of-type), .price div:not(:last-of-type) {
       padding: 0 3rem; }
+      @media only screen and (max-width: 37.5em) {
+        .price div:not(:first-of-type), .price div:not(:last-of-type) {
+          padding: 3rem 0; } }
     .price div:not(:last-of-type) {
       border-right: 1px solid #7a7a7a; }
+      @media only screen and (max-width: 37.5em) {
+        .price div:not(:last-of-type) {
+          border-right: 0;
+          border-bottom: 1px solid #7a7a7a; } }
   .price__subTitle {
     font-size: 1.4rem;
     color: #95a5a6; }
