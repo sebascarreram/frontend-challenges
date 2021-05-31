@@ -59,6 +59,10 @@ export const projects = [
   },
   {
     name: "blogr-landing-page-main",
-    github_url: `${url}/blogr-landing-page-main`
-  }
+    github_url: `${url}/blogr-landing-page-main`,
+  },
+  {
+    name: "crowdfunding-product-page-main",
+    github_url: `${url}/crowdfunding-product-page-main`,
+  },
 ];
