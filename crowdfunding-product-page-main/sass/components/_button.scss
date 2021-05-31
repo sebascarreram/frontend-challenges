@@ -1,0 +1,49 @@
+.section-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 1.5rem 5rem;
+  display: inline-block;
+  border-radius: 10rem;
+  position: relative;
+  font-size: 1.6rem;
+  font-weight: 600;
+
+  border: none;
+  cursor: pointer;
+
+  &--moderate {
+    background-color: hsl(176, 50%, 47%);
+    color: white;
+    border: 1px solid transparent;
+
+    &:hover {
+      background-color: hsl(176, 72%, 28%);
+      /*background: hsl(356, 100%, 66%);
+      color: hsl(0, 0%, 100%);
+      border: 1px solid hsl(0, 0%, 100%);*/
+    }
+  }
+
+  &--gray {
+    background-color: hsl(0, 0%, 48%);
+  }
+}
+
+.btnBookmark {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &--icon {
+    position: absolute;
+    z-index: 1;
+    height: 5rem;
+    margin-left: -1rem;
+  }
+}

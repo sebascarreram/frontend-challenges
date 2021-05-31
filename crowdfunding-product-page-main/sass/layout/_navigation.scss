@@ -1,0 +1,18 @@
+.nav{
+  display: flex;
+
+  &__link{
+    font-size: 1.6rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+
+    &:hover{
+      font-weight: 700;
+    }
+
+    &:not(:last-of-type){
+      margin-right: 3.5rem;
+    }
+  }
+}

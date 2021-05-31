@@ -1,0 +1,55 @@
+body {
+  line-height: 1.7;
+}
+
+.heading-primary {
+  color: white;
+
+  margin-bottom: 1rem;
+  display: block;
+  font-size: 6rem;
+}
+.heading-secondary {
+  font-size: 3.5rem;
+  font-weight: 600;
+  display: inline-block;
+
+  backface-visibility: hidden;
+
+  &--blueDark {
+    color: hsl(208, 49%, 24%);
+  }
+  &--light {
+    color: hsl(0, 0%, 100%);
+  }
+}
+.heading-tertiary {
+  font-weight: 300;
+  font-size: 2rem;
+  font-weight: 700;
+
+  &--dark {
+    color: hsl(208, 49%, 24%);
+  }
+  &--light {
+    color: hsl(0, 0%, 100%);
+  }
+}
+
+.paragraph {
+  font-size: 1.6rem;
+
+  &--light {
+    color: hsl(0, 0%, 100%);
+  }
+  &--gray {
+    color: hsl(0, 0%, 48%);
+  }
+  &--darkMediom {
+    color: hsl(207, 13%, 34%);
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
