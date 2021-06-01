@@ -18,7 +18,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
     top: -300px;
     opacity: 0; }
   to {
-    top: 23%;
+    top: 30%;
     opacity: 1; } }
 
 @-webkit-keyframes moveInBottom {
@@ -26,7 +26,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
     top: -300px;
     opacity: 0; }
   to {
-    top: 23%;
+    top: 30%;
     opacity: 1; } }
 
 *,
