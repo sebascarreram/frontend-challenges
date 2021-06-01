@@ -1,0 +1,20 @@
+@keyframes moveInBottom {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 23%;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes moveInBottom {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 23%;
+    opacity: 1;
+  }
+}

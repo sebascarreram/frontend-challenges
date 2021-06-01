@@ -4,6 +4,7 @@
   background-position: center;
   height: 39rem;
   &__container {
+    //    position: relative;
     max-width: 114rem;
     margin: 0 auto;
 
@@ -12,9 +13,32 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include respond(tab-port) {
+      padding: 3rem 4rem;
+    }
   }
   &__logo {
     cursor: pointer;
     height: 3rem;
+  }
+  &__hamburger {
+    display: none;
+    background-image: url(./../../images/icon-hamburger.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    height: 3rem;
+    width: 3rem;
+    z-index: 44;
+    transition: all .2s;
+    @include respond(tab-port){
+      display: block;
+    }
+
+    &--active {
+      display: block;
+      background-image: url("./../../images/icon-close-menu.svg");
+    }
   }
 }
