@@ -23,7 +23,7 @@
   }
   &__hamburger {
     display: none;
-    background-image: url(./../../images/icon-hamburger.svg);
+    background-image: url(./../images/icon-hamburger.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -38,7 +38,7 @@
 
     &--active {
       display: block;
-      background-image: url("./../../images/icon-close-menu.svg");
+      background-image: url("./../images/icon-close-menu.svg");
     }
   }
 }
