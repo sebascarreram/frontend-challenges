@@ -30,6 +30,11 @@
     }
   }
 
+  &--out {
+    background-color: hsl(0, 0%, 48%);
+    cursor: not-allowed;
+  }
+
   &--gray {
     background-color: hsl(0, 0%, 48%);
   }

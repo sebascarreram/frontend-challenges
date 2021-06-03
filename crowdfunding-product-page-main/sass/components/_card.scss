@@ -21,12 +21,18 @@
 
   &__sub {
     padding: 2rem;
-    border: 1px solid hsl(0, 0%, 48%);
-
     border-radius: 8px;
 
-    &:not(:last-of-type){
+    &:not(:last-of-type) {
       margin-bottom: 2rem;
+    }
+
+    &--out {
+      border: 1px solid #e0ddddf7;
+    }
+
+    &--active {
+      border: 1px solid hsl(0, 0%, 48%);
     }
 
     &--title {
@@ -34,7 +40,7 @@
       p {
         font-size: 1.5rem;
         color: hsl(176, 72%, 28%);
-        @include respond(phone){
+        @include respond(phone) {
           margin-top: -0.5rem;
         }
       }

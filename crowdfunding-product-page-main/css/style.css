@@ -150,6 +150,9 @@ body {
       /*background: hsl(356, 100%, 66%);
       color: hsl(0, 0%, 100%);
       border: 1px solid hsl(0, 0%, 100%);*/ }
+  .btn--out {
+    background-color: #7a7a7a;
+    cursor: not-allowed; }
   .btn--gray {
     background-color: #7a7a7a; }
 
@@ -199,10 +202,13 @@ body {
     margin-top: -10rem; }
   .card__sub {
     padding: 2rem;
-    border: 1px solid #7a7a7a;
     border-radius: 8px; }
     .card__sub:not(:last-of-type) {
       margin-bottom: 2rem; }
+    .card__sub--out {
+      border: 1px solid #e0ddddf7; }
+    .card__sub--active {
+      border: 1px solid #7a7a7a; }
     .card__sub--title {
       margin-bottom: 1rem; }
       .card__sub--title p {
