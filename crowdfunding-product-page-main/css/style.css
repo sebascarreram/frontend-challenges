@@ -163,12 +163,20 @@ body {
   @media only screen and (max-width: 37.5em) {
     .btnBookmark--text {
       display: none; } }
+  .btnBookmark--text--active {
+    color: #147b74; }
   .btnBookmark--icon {
     position: absolute;
     z-index: 1;
-    height: 5rem;
+    background: url(./../images/icon-bookmark.svg);
+    background-size: contain;
     margin-left: -1rem;
-    cursor: pointer; }
+    cursor: pointer;
+    width: 4.5rem;
+    height: 4.5rem; }
+    .btnBookmark--icon--active {
+      background: url(./../images/icon-bookmark-mark.svg);
+      background-size: contain; }
     @media only screen and (max-width: 37.5em) {
       .btnBookmark--icon {
         position: initial;

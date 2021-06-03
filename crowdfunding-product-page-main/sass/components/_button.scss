@@ -44,20 +44,39 @@
     display: none;
   }*/
 
+  &--active {
+  }
+
   &--text {
+    //text-align: end;
     @include respond(phone) {
       display: none;
+    }
+
+    &--active {
+      color: hsl(176, 72%, 28%);
     }
   }
 
   &--icon {
     position: absolute;
     z-index: 1;
-    height: 5rem;
+    //height: 5rem;
+
+    background: url(./../images/icon-bookmark.svg);
+    background-size: contain;
     margin-left: -1rem;
     cursor: pointer;
 
-    @include respond(phone){
+    width: 4.5rem;
+    height: 4.5rem;
+
+    &--active {
+      background: url(./../images/icon-bookmark-mark.svg);
+      background-size: contain;
+    }
+
+    @include respond(phone) {
       position: initial;
       margin-left: 0;
     }
