@@ -69,4 +69,8 @@ export const projects = [
     name: "interactive-pricing-component-main",
     github_url: `${url}/interactive-pricing-component-main`,
   },
+  {
+    name: "loopstudios-landing-page-main",
+    github_url: `${url}/loopstudios-landing-page-main`,
+  },
 ];
