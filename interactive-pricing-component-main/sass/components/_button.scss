@@ -1,0 +1,22 @@
+.btn {
+  text-decoration: none;
+  padding: 1.5rem 5rem;
+  display: inline-block;
+  border-radius: 10rem;
+  position: relative;
+  font-size: 1.6rem;
+  font-weight: 600;
+
+  border: none;
+  cursor: pointer;
+
+  &--dark {
+    background-color: hsl(227, 35%, 25%);
+    color: white;
+    border: 1px solid transparent;
+
+    &:hover {
+      background-color: #3c5095;
+    }
+  }
+}

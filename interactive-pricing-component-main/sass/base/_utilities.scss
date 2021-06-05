@@ -1,0 +1,44 @@
+.flex {
+  display: flex;
+
+  &-alignCenter {
+    align-items: center;
+  }
+  &-justifyContent {
+    justify-content: space-between;
+  }
+  &-end{
+    justify-content: flex-end;
+  }
+
+  @include respond(phone) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.u-center-text {
+  text-align: center;
+}
+// TOP
+.u-margin-top-small {
+  margin-top: 3rem !important;
+}
+.u-margin-top-big {
+  margin-top: 8rem !important;
+}
+.u-margin-top-huge {
+  margin-top: 10rem !important;
+}
+
+// BOTTOM
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important;
+}
+.u-margin-bottom-mediom {
+  margin-bottom: 4rem !important;
+}
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important;
+}
+

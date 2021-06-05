@@ -1,0 +1,57 @@
+body {
+  line-height: 1.7;
+}
+
+.heading-primary {
+  color: hsl(227, 35%, 25%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--main {
+    font-size: 4rem;
+    font-weight: 800;
+  }
+
+  &--sub {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-left: 0.5rem;
+    color: hsl(225, 20%, 60%);
+
+    @include respond(phone) {
+    }
+  }
+}
+// h2
+.heading-secondary {
+  font-size: 3.5rem;
+  font-weight: 600;
+  display: inline-block;
+
+  &--blueDark {
+    color: hsl(227, 35%, 25%);
+  }
+  &--light {
+    color: hsl(0, 0%, 100%);
+  }
+}
+// h3
+.heading-tertiary {
+  font-weight: 300;
+  font-size: 2rem;
+  font-weight: 600;
+
+  &--blue {
+    color: hsl(225, 20%, 60%);
+  }
+}
+
+.paragraph {
+  font-size: 1.6rem;
+
+  &--light {
+    color: hsl(225, 20%, 60%);
+  }
+}

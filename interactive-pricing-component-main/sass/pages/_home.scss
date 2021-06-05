@@ -1,0 +1,47 @@
+.text-box {
+  text-align: center;
+}
+.billing {
+  & * {
+    &:not(:last-child) {
+      margin-right: 1.2rem;
+    }
+  }
+}
+.discount {
+  font-size: 1.4rem;
+  background-color: #ff8c6629;
+  color: hsl(15, 100%, 70%);
+  font-weight: 800;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+.info {
+  align-items: center;
+  &__content {
+    position: relative;
+    & p {
+      position: relative;
+
+      &::before {
+        width: 11px;
+        height: 11px;
+        content: " ";
+        background-image: url(./../../images/icon-check.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        position: absolute;
+        left: -1.9rem;
+        top: 1rem;
+      }
+    }
+    &--text {
+      font-size: 1.4rem;
+
+      &:not(:last-of-type) {
+        margin-bottom: 0.3rem;
+      }
+    }
+  }
+}
