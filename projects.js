@@ -65,4 +65,8 @@ export const projects = [
     name: "crowdfunding-product-page-main",
     github_url: `${url}/crowdfunding-product-page-main`,
   },
+  {
+    name: "interactive-pricing-component-main",
+    github_url: `${url}/interactive-pricing-component-main`,
+  },
 ];
