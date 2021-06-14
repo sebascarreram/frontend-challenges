@@ -30,6 +30,10 @@ body {
   font-weight: 600;
   display: inline-block;
 
+  @include respond(phone) {
+    line-height: 1.2;
+  }
+
   &--blueDark {
     color: hsl(227, 35%, 25%);
   }

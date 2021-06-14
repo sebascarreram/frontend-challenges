@@ -10,6 +10,10 @@
   border: none;
   cursor: pointer;
 
+  @include respond(phone){
+    width: 100%;
+  }
+
   &--dark {
     background-color: hsl(227, 35%, 25%);
     color: white;

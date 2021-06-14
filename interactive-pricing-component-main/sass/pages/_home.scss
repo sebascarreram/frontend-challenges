@@ -1,5 +1,38 @@
+.section {
+  padding: 2.5rem;
+}
+
+main {
+  &::before {
+    content: "";
+    background-image: url(./../../images/bg-pattern.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -5;
+  }
+}
+
 .text-box {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  &::before {
+    content: "";
+    background-image: url(./../../images/pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    height: 16.55rem;
+    width: 16.3rem;
+    z-index: -5;
+  }
 }
 .billing {
   & * {
@@ -15,6 +48,10 @@
   font-weight: 800;
   padding: 0.5rem 1rem;
   border-radius: 10px;
+
+  @include respond(phone) {
+    margin-top: 1rem;
+  }
 }
 .info {
   align-items: center;
@@ -42,6 +79,13 @@
       &:not(:last-of-type) {
         margin-bottom: 0.3rem;
       }
+    }
+  }
+  &__button {
+    @include respond(tab-port) {
+      margin-top: 2rem;
+      width: 100%;
+      text-align: center;
     }
   }
 }

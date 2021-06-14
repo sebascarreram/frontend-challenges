@@ -28,6 +28,11 @@
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+
+  @include respond(phone) {
+    width: 30px;
+    height: 30px;
+  }
 }
 .slider::-moz-slider-thumb {
   -webkit-appearance: none;
@@ -41,6 +46,11 @@
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+
+  @include respond(phone) {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 /*.slider::-moz-range-thumb {

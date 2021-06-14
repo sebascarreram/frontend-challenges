@@ -59,6 +59,9 @@ body {
   font-size: 3.5rem;
   font-weight: 600;
   display: inline-block; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-secondary {
+      line-height: 1.2; } }
   .heading-secondary--blueDark {
     color: #293356; }
   .heading-secondary--light {
@@ -76,21 +79,31 @@ body {
   .paragraph--light {
     color: #858fad; }
 
+@media only screen and (max-width: 37.5em) {
+  .billing {
+    flex-direction: column !important; } }
+
 .flex {
   display: flex; }
   @media only screen and (max-width: 56.25em) {
-    .flex {
-      flex-direction: column !important; } }
+    .flex-column {
+      flex-direction: column !important;
+      align-items: center; } }
   .flex-alignCenter {
     align-items: center; }
   .flex-justifyContent {
     justify-content: space-between; }
   .flex-end {
     justify-content: flex-end; }
-  @media only screen and (max-width: 37.5em) {
-    .flex {
-      flex-direction: column;
-      align-items: flex-start; } }
+    @media only screen and (max-width: 56.25em) {
+      .flex-end {
+        justify-content: center; } }
+  .flex-centerJustify {
+    justify-content: center; }
+
+.u-margin-center-auto {
+  margin-left: auto;
+  margin-right: auto; }
 
 .u-center-text {
   text-align: center; }
@@ -103,6 +116,9 @@ body {
 
 .u-margin-top-huge {
   margin-top: 10rem !important; }
+  @media only screen and (max-width: 56.25em) {
+    .u-margin-top-huge {
+      margin-top: 5rem !important; } }
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important; }
@@ -123,6 +139,9 @@ body {
   font-weight: 600;
   border: none;
   cursor: pointer; }
+  @media only screen and (max-width: 37.5em) {
+    .btn {
+      width: 100%; } }
   .btn--dark {
     background-color: #293356;
     color: white;
@@ -138,6 +157,12 @@ body {
   background-color: white;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   position: relative; }
+  @media only screen and (max-width: 56.25em) {
+    .card {
+      padding: 4rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .card {
+      padding: 2.5rem; } }
 
 .slider {
   margin-top: 3rem;
@@ -164,6 +189,10 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer; }
+  @media only screen and (max-width: 37.5em) {
+    .slider::-webkit-slider-thumb {
+      width: 30px;
+      height: 30px; } }
 
 .slider::-moz-slider-thumb {
   -webkit-appearance: none;
@@ -177,6 +206,10 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer; }
+  @media only screen and (max-width: 37.5em) {
+    .slider::-moz-slider-thumb {
+      width: 30px;
+      height: 30px; } }
 
 /*.slider::-moz-range-thumb {
   -webkit-appearance: none;
@@ -191,8 +224,36 @@ body {
   background-position: center;
   cursor: pointer;
 }*/
+.section {
+  padding: 2.5rem; }
+
+main::before {
+  content: "";
+  background-image: url(./../../images/bg-pattern.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -5; }
+
 .text-box {
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative; }
+  .text-box::before {
+    content: "";
+    background-image: url(./../../images/pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    height: 16.55rem;
+    width: 16.3rem;
+    z-index: -5; }
 
 .billing *:not(:last-child) {
   margin-right: 1.2rem; }
@@ -204,6 +265,9 @@ body {
   font-weight: 800;
   padding: 0.5rem 1rem;
   border-radius: 10px; }
+  @media only screen and (max-width: 37.5em) {
+    .discount {
+      margin-top: 1rem; } }
 
 .info {
   align-items: center; }
@@ -225,3 +289,8 @@ body {
       font-size: 1.4rem; }
       .info__content--text:not(:last-of-type) {
         margin-bottom: 0.3rem; }
+  @media only screen and (max-width: 56.25em) {
+    .info__button {
+      margin-top: 2rem;
+      width: 100%;
+      text-align: center; } }
