@@ -5,7 +5,7 @@
 main {
   &::before {
     content: "";
-    background-image: url(./../../images/bg-pattern.svg);
+    background-image: url(./../images/bg-pattern.svg);
     background-repeat: no-repeat;
     position: absolute;
     top: 0;
@@ -24,7 +24,7 @@ main {
   position: relative;
   &::before {
     content: "";
-    background-image: url(./../../images/pattern-circles.svg);
+    background-image: url(./../images/pattern-circles.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
