@@ -252,6 +252,9 @@ body {
     position: absolute;
     bottom: 7rem; }
 
+.nav--close {
+  background-image: url("./../../images/icon-close.svg"); }
+
 @media only screen and (max-width: 37.5em) {
   .nav--top {
     display: none; } }
@@ -260,10 +263,16 @@ body {
   display: none; }
   @media only screen and (max-width: 37.5em) {
     .nav__hamburger {
+      background-image: url("./../../images/icon-hamburger.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
       display: block;
       cursor: pointer;
       width: 3rem;
-      height: 3rem; } }
+      height: 3rem;
+      transition: all 0.2s; }
+      .nav__hamburger--close {
+        background-image: url("./../../images/icon-close.svg"); } }
 
 .nav__list {
   display: flex;

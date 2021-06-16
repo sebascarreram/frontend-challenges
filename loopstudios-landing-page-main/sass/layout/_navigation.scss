@@ -1,19 +1,31 @@
 .nav {
+  &--close {
+    background-image: url("./../../images/icon-close.svg");
+  }
 
-  &--top{
-    @include respond(phone){
+  &--top {
+    @include respond(phone) {
       display: none;
     }
   }
 
-  &__hamburger{
+  &__hamburger {
     display: none;
 
-    @include respond(phone){
+    @include respond(phone) {
+      background-image: url("./../../images/icon-hamburger.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+
       display: block;
       cursor: pointer;
       width: 3rem;
       height: 3rem;
+
+      transition: all 0.2s;
+      &--close {
+        background-image: url("./../../images/icon-close.svg");
+      }
     }
   }
   &__list {

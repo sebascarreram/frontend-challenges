@@ -1,4 +1,5 @@
 const lists = document.getElementById("lists");
+const hamburger = document.querySelector(".nav__hamburger");
 import { cardList } from "./cardList.js";
 
 let kindFolder = "desktop";
@@ -8,7 +9,7 @@ window.addEventListener("resize", (e) => {
     kindFolder = "mobile";
     //    console.log("Yes, alo?");
   }
-//  abb(kindFolder);
+  //  abb(kindFolder);
   //  console.log(e.target.innerWidth);
 });
 function abb(ee) {
@@ -29,3 +30,8 @@ function abb(ee) {
 }
 
 abb(kindFolder);
+
+hamburger.addEventListener("click", (e) => {
+//  console.log("Alo?");
+  hamburger.classList.toggle("nav__hamburger--close");
+});
