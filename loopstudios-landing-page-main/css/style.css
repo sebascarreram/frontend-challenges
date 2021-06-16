@@ -81,6 +81,9 @@ body {
 .wrapper {
   margin: 0 auto;
   max-width: 111rem; }
+  @media only screen and (max-width: 56.25em) {
+    .wrapper {
+      margin: 0 1.5rem; } }
   .wrapper--hero {
     height: 85vh;
     position: relative; }
@@ -121,14 +124,29 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.6rem; }
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  padding: 1rem 3rem; }
   .btn--link:link, .btn--link:visited {
     text-decoration: none;
     color: black; }
+  @media only screen and (max-width: 37.5em) {
+    .btn--top {
+      display: none; } }
+  .btn--bottom {
+    display: none;
+    text-align: center;
+    margin: 1.5rem auto 0 auto; }
+    @media only screen and (max-width: 37.5em) {
+      .btn--bottom {
+        display: block; } }
 
 .cards {
   display: flex;
   justify-content: space-between; }
+  @media only screen and (max-width: 37.5em) {
+    .cards {
+      justify-content: center; } }
 
 .card {
   display: inline-block; }
@@ -138,9 +156,16 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     list-style-type: none; }
+    @media only screen and (max-width: 37.5em) {
+      .card__list {
+        display: block;
+        flex-wrap: nowrap; } }
   .card__item {
     margin: 1rem;
     position: relative; }
+    @media only screen and (max-width: 37.5em) {
+      .card__item {
+        margin: 1rem 0; } }
   .card__text {
     position: absolute;
     bottom: 1.5rem;
@@ -151,9 +176,16 @@ body {
     background-size: cover;
     width: 25.7rem;
     height: 40rem;
-    transition: all .2s; }
+    transition: all 0.2s; }
     .card__img:hover {
       transform: scale(1.1); }
+      @media only screen and (max-width: 37.5em) {
+        .card__img:hover {
+          transform: none; } }
+    @media only screen and (max-width: 37.5em) {
+      .card__img {
+        width: 100%;
+        height: 25rem; } }
 
 .logo {
   cursor: pointer; }
@@ -172,11 +204,25 @@ body {
   .footer__flex {
     display: flex;
     justify-content: space-between; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__flex {
+        flex-direction: column;
+        align-items: center; } }
+  @media only screen and (max-width: 37.5em) {
+    .footer-left {
+      text-align: center;
+      display: flex;
+      flex-direction: column; } }
   .footer-right {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between; }
+    @media only screen and (max-width: 37.5em) {
+      .footer-right {
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem; } }
   .footer__copyright {
     color: dimgray;
     font-size: 1.6rem; }
@@ -221,8 +267,16 @@ body {
 .introduction {
   display: flex;
   position: relative; }
+  @media only screen and (max-width: 56.25em) {
+    .introduction {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
   .introduction__img {
     width: 90%; }
+    @media only screen and (max-width: 56.25em) {
+      .introduction__img {
+        width: 100%; } }
   .introduction-right {
     background: white;
     width: 59rem;
@@ -230,7 +284,22 @@ body {
     position: absolute;
     bottom: 0;
     right: -6rem; }
+    @media only screen and (max-width: 75em) {
+      .introduction-right {
+        right: -3rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .introduction-right {
+        right: 0;
+        text-align: center;
+        position: static;
+        width: 70rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .introduction-right {
+        width: 100%; } }
 
 .section-cards {
   padding: 20rem 0;
   margin-top: -8rem; }
+  @media only screen and (max-width: 37.5em) {
+    .section-cards {
+      margin-top: -18rem; } }

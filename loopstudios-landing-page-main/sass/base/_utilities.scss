@@ -2,6 +2,10 @@
   margin: 0 auto;
   max-width: 111rem;
 
+  @include respond(tab-port){
+    margin: 0 1.5rem;
+  }
+
   &--hero {
     height: 85vh;
     position: relative;

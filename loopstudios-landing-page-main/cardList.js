@@ -28,7 +28,7 @@ export const cardList = [
     image: "image-curiosity.jpg",
   },
   {
-    name: "Make if fisheye",
+    name: "Make it fisheye",
     image: "image-fisheye.jpg",
   },
 ];

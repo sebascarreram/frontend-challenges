@@ -5,11 +5,28 @@
   justify-content: center;
   align-items: center;
 
+  text-transform: uppercase;
+
   font-size: 1.6rem;
+  padding: 1rem 3rem;
 
   &--link:link,
   &--link:visited {
     text-decoration: none;
     color: hsl(0, 0%, 0%);
+  }
+
+  &--top{
+    @include respond(phone){
+      display: none;
+    }
+  }
+  &--bottom{
+    display: none;
+    text-align: center;
+    margin: 1.5rem auto 0 auto;
+    @include respond(phone){
+      display: block;
+    }
   }
 }

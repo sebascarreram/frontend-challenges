@@ -1,6 +1,9 @@
 .cards {
   display: flex;
   justify-content: space-between;
+  @include respond(phone) {
+    justify-content: center;
+  }
 }
 .card {
   display: inline-block;
@@ -11,11 +14,20 @@
     flex-wrap: wrap;
     justify-content: center;
     list-style-type: none;
+
+    @include respond(phone) {
+      display: block;
+      flex-wrap: nowrap;
+    }
   }
 
   &__item {
     margin: 1rem;
     position: relative;
+
+    @include respond(phone) {
+      margin: 1rem 0;
+    }
   }
 
   &__text {
@@ -29,11 +41,17 @@
     background-size: cover;
     width: 25.7rem;
     height: 40rem;
-    transition: all .2s;
+    transition: all 0.2s;
 
-    &:hover{
-//      transform: scaleX(-1);
+    &:hover {
       transform: scale(1.1);
+      @include respond(phone) {
+        transform: none;
+      }
+    }
+    @include respond(phone) {
+      width: 100%;
+      height: 25rem;
     }
   }
 }

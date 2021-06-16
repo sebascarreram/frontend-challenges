@@ -5,6 +5,19 @@
   &__flex {
     display: flex;
     justify-content: space-between;
+
+    @include respond(phone) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &-left {
+    @include respond(phone) {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &-right {
@@ -12,6 +25,11 @@
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
+    @include respond(phone) {
+      justify-content: center;
+      align-items: center;
+      margin-top: 2rem;
+    }
   }
   &__copyright {
     color: hsl(0, 0%, 41%);
