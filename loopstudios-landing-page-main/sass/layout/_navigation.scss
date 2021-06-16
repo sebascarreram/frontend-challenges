@@ -13,7 +13,7 @@
     display: none;
 
     @include respond(phone) {
-      background-image: url("./../../images/icon-hamburger.svg");
+      background-image: url("./../images/icon-hamburger.svg");
       background-size: cover;
       background-repeat: no-repeat;
 
@@ -24,7 +24,7 @@
 
       transition: all 0.2s;
       &--close {
-        background-image: url("./../../images/icon-close.svg");
+        background-image: url("./../images/icon-close.svg");
       }
     }
   }
