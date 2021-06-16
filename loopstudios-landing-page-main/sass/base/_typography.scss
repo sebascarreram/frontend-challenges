@@ -30,6 +30,7 @@ body {
 
   @include respond(phone) {
     line-height: 1.2;
+    letter-spacing: 0.4rem;
   }
 }
 // h3

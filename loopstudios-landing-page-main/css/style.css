@@ -62,7 +62,8 @@ body {
   letter-spacing: 1rem; }
   @media only screen and (max-width: 37.5em) {
     .heading-secondary {
-      line-height: 1.2; } }
+      line-height: 1.2;
+      letter-spacing: 0.4rem; } }
 
 .heading-tertiary {
   font-weight: 300;
