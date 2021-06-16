@@ -1,0 +1,236 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+ORDER: Base + typography > general layout + grid > page layout > components
+1em = 16px
+*/
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  font-family: "Alata", sans-serif; }
+
+body {
+  line-height: 1.7; }
+
+.heading-primary {
+  display: inline-block; }
+  .heading-primary--main {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 7rem;
+    font-weight: 300;
+    max-width: 60rem;
+    line-height: 0.89;
+    padding: 3rem;
+    border: 1px solid white;
+    text-transform: uppercase;
+    color: white; }
+
+.heading-secondary {
+  font-size: 4rem;
+  font-weight: 300;
+  font-family: "Josefin Sans", sans-serif;
+  display: inline-block;
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 1rem; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-secondary {
+      line-height: 1.2; } }
+
+.heading-tertiary {
+  font-weight: 300;
+  font-size: 4rem;
+  line-height: 1;
+  display: inline-block;
+  color: white;
+  font-family: "Josefin Sans", sans-serif; }
+
+.paragraph {
+  font-size: 1.6rem;
+  color: #8c8c8c; }
+  .paragraph--light {
+    color: #858fad; }
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 111rem; }
+  .wrapper--hero {
+    height: 85vh;
+    position: relative; }
+
+.u-center-text {
+  text-align: center; }
+
+.u-margin-top-small {
+  margin-top: 3rem !important; }
+
+.u-margin-top-big {
+  margin-top: 8rem !important; }
+
+.u-margin-top-huge {
+  margin-top: 10rem !important; }
+  @media only screen and (max-width: 56.25em) {
+    .u-margin-top-huge {
+      margin-top: 5rem !important; } }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important; }
+  @media only screen and (max-width: 56.25em) {
+    .u-margin-bottom-medium {
+      margin-bottom: 3rem !important; } }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important; }
+  @media only screen and (max-width: 56.25em) {
+    .u-margin-bottom-big {
+      margin-bottom: 5rem !important; } }
+
+.btn {
+  width: 16rem;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem; }
+  .btn--link:link, .btn--link:visited {
+    text-decoration: none;
+    color: black; }
+
+.cards {
+  display: flex;
+  justify-content: space-between; }
+
+.card {
+  display: inline-block; }
+  .card__list {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none; }
+  .card__item {
+    margin: 1rem;
+    position: relative; }
+  .card__text {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    width: 19rem; }
+  .card__img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25.7rem;
+    height: 40rem;
+    transition: all .2s; }
+    .card__img:hover {
+      transform: scale(1.1); }
+
+.logo {
+  cursor: pointer; }
+  .logo--footer {
+    margin-bottom: 1.5rem; }
+
+.social {
+  display: flex;
+  margin-bottom: 1.5rem; }
+  .social__item:not(:last-of-type) {
+    margin-right: 2rem; }
+
+.footer {
+  padding: 10rem 0;
+  background: black; }
+  .footer__flex {
+    display: flex;
+    justify-content: space-between; }
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between; }
+  .footer__copyright {
+    color: dimgray;
+    font-size: 1.6rem; }
+
+.header {
+  height: 85vh;
+  background: black;
+  /* Fallback color */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./../../images/desktop/image-hero.jpg");
+  background-size: cover;
+  background-position: top; }
+  .header__navigation {
+    display: flex;
+    width: 100%;
+    padding: 3.5rem 0;
+    justify-content: space-between; }
+    @media only screen and (max-width: 56.25em) {
+      .header__navigation {
+        padding: 3.5rem 1.5rem; } }
+  .header__title {
+    display: flex;
+    position: absolute;
+    bottom: 7rem; }
+
+.nav__list {
+  display: flex;
+  list-style-type: none; }
+
+.nav__item:not(:last-of-type) {
+  margin-right: 2rem; }
+
+.nav__link:visited, .nav__link:link {
+  /*font-family: "Josefin Sans", sans-serif;
+      font-weight: 300;*/
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: white; }
+
+.section-introduction {
+  padding: 20rem 0; }
+
+.introduction {
+  display: flex;
+  position: relative; }
+  .introduction__img {
+    width: 90%; }
+  .introduction-right {
+    background: white;
+    width: 59rem;
+    padding: 5rem;
+    position: absolute;
+    bottom: 0;
+    right: -6rem; }
+
+.section-cards {
+  padding: 20rem 0;
+  margin-top: -8rem; }

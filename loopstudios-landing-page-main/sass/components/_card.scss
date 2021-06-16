@@ -1,0 +1,39 @@
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  display: inline-block;
+
+  &__list {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+  }
+
+  &__item {
+    margin: 1rem;
+    position: relative;
+  }
+
+  &__text {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    width: 19rem;
+  }
+  &__img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25.7rem;
+    height: 40rem;
+    transition: all .2s;
+
+    &:hover{
+//      transform: scaleX(-1);
+      transform: scale(1.1);
+    }
+  }
+}
