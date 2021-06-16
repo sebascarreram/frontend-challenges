@@ -1,4 +1,21 @@
 .nav {
+
+  &--top{
+    @include respond(phone){
+      display: none;
+    }
+  }
+
+  &__hamburger{
+    display: none;
+
+    @include respond(phone){
+      display: block;
+      cursor: pointer;
+      width: 3rem;
+      height: 3rem;
+    }
+  }
   &__list {
     display: flex;
     list-style-type: none;
