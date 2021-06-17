@@ -13,6 +13,14 @@ ORDER: Base + typography > general layout + grid > page layout > components
 1em = 16px
 */
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
 *,
 *::before,
 *::after {
@@ -267,15 +275,17 @@ body {
   .nav--top {
     display: none;
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
     height: 100vh;
     background: #2d3436;
     width: 100%;
     z-index: 4;
     align-items: center;
-    padding: 1.5rem; } }
+    padding: 1.5rem;
+    animation-name: moveInTop;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out; } }
 
 .nav__hamburger {
   display: none;
