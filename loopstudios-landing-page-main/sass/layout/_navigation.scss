@@ -1,16 +1,35 @@
 .nav {
   &--close {
     background-image: url("./../../images/icon-close.svg");
+    z-index: 44;
+  }
+
+  &--active{
+    display: flex !important;
   }
 
   &--top {
     @include respond(phone) {
       display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 100vh;
+      background: #2d3436;
+      width: 100%;
+      z-index: 4;
+      //display: flex;
+
+      align-items: center;
+      padding: 1.5rem;
     }
   }
 
   &__hamburger {
     display: none;
+
+    z-index: 44;
 
     @include respond(phone) {
       background-image: url("./../images/icon-hamburger.svg");
@@ -31,10 +50,22 @@
   &__list {
     display: flex;
     list-style-type: none;
+
+    &--top {
+      @include respond(phone) {
+        flex-direction: column;
+      }
+    }
   }
   &__item {
     &:not(:last-of-type) {
       margin-right: 2rem;
+    }
+
+    &--top {
+      @include respond(phone) {
+        margin-right: 0rem !important;
+      }
     }
   }
   &__link {
@@ -45,6 +76,13 @@
       text-decoration: none;
       font-size: 1.6rem;
       color: hsl(0, 0%, 100%);
+    }
+    &--top {
+      @include respond(phone) {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 5rem !important;
+        font-weight: 300;
+      }
     }
   }
 }

@@ -193,7 +193,8 @@ body {
         height: 25rem; } }
 
 .logo {
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: 44; }
   .logo--footer {
     margin-bottom: 1.5rem; }
 
@@ -253,14 +254,29 @@ body {
     bottom: 7rem; }
 
 .nav--close {
-  background-image: url("./../../images/icon-close.svg"); }
+  background-image: url("./../../images/icon-close.svg");
+  z-index: 44; }
+
+.nav--active {
+  display: flex !important; }
 
 @media only screen and (max-width: 37.5em) {
   .nav--top {
-    display: none; } }
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100vh;
+    background: #2d3436;
+    width: 100%;
+    z-index: 4;
+    align-items: center;
+    padding: 1.5rem; } }
 
 .nav__hamburger {
-  display: none; }
+  display: none;
+  z-index: 44; }
   @media only screen and (max-width: 37.5em) {
     .nav__hamburger {
       background-image: url("./../images/icon-hamburger.svg");
@@ -277,9 +293,16 @@ body {
 .nav__list {
   display: flex;
   list-style-type: none; }
+  @media only screen and (max-width: 37.5em) {
+    .nav__list--top {
+      flex-direction: column; } }
 
 .nav__item:not(:last-of-type) {
   margin-right: 2rem; }
+
+@media only screen and (max-width: 37.5em) {
+  .nav__item--top {
+    margin-right: 0rem !important; } }
 
 .nav__link:visited, .nav__link:link {
   /*font-family: "Josefin Sans", sans-serif;
@@ -287,6 +310,12 @@ body {
   text-decoration: none;
   font-size: 1.6rem;
   color: white; }
+
+@media only screen and (max-width: 37.5em) {
+  .nav__link--top {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 5rem !important;
+    font-weight: 300; } }
 
 .section-introduction {
   padding: 20rem 0; }

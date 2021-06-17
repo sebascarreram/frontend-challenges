@@ -1,5 +1,6 @@
 const lists = document.getElementById("lists");
 const hamburger = document.querySelector(".nav__hamburger");
+const navTop = document.querySelector(".nav--top");
 import { cardList } from "./cardList.js";
 
 let kindFolder = "desktop";
@@ -32,6 +33,7 @@ function abb(ee) {
 abb(kindFolder);
 
 hamburger.addEventListener("click", (e) => {
-//  console.log("Alo?");
+  //  console.log("Alo?");
   hamburger.classList.toggle("nav__hamburger--close");
+  navTop.classList.toggle("nav--active");
 });
