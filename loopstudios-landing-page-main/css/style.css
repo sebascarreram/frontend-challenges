@@ -36,6 +36,9 @@ html {
 body {
   font-family: "Alata", sans-serif; }
 
+.body-active {
+  overflow: hidden; }
+
 body {
   line-height: 1.7; }
 
