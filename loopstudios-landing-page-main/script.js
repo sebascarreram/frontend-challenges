@@ -1,10 +1,5 @@
 const lists = document.getElementById("lists");
-const hamburger = document.querySelector(".nav__hamburger");
-const navTop = document.querySelector(".nav--top");
-const body = document.querySelector("body");
 import { cardList } from "./cardList.js";
-
-let kindFolder = "desktop";
 
 window.addEventListener("resize", (e) => {
   if (e.target.innerWidth < 600) {
@@ -14,28 +9,25 @@ window.addEventListener("resize", (e) => {
   //  abb(kindFolder);
   //  console.log(e.target.innerWidth);
 });
-function abb(ee) {
-  cardList.forEach(({ name, image }) => {
-    const li = document.createElement("li");
-    li.className = "card__item";
+cardList.forEach(({ name, image }) => {
+  const li = document.createElement("li");
+  li.className = "card__item";
 
-    const styleImage = `
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('./images/${ee}/${image}')
-  `;
-
-    li.innerHTML = `
-    <img class="card__img" style="${styleImage}" alt="${name}"/>
+  li.innerHTML = `
+    <picture>
+      <source
+        srcset="./images/mobile/${image}" 
+        media="(max-width: 37.5em)"
+        >
+      <img
+        src="./images/desktop/${image}" 
+        alt="${name}" 
+        class="card__img"
+        >
+    </picture>
     <p class="card__text heading-tertiary">${name}</p>
   `;
-    lists.appendChild(li);
-  });
-}
-
-abb(kindFolder);
-
-hamburger.addEventListener("click", (e) => {
-  //  console.log("Alo?");
-  hamburger.classList.toggle("nav__hamburger--close");
-  navTop.classList.toggle("nav--active");
-  body.classList.toggle("body-active");
+  lists.appendChild(li);
 });
+
+//     <img class="card__img" style="${styleImage}" alt="${name}"/>

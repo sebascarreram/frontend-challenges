@@ -40,9 +40,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 25.7rem;
-    height: 40rem;
-    transition: all 0.2s;
     display: inline-block;
+    transition: all 0.2s;
 
     &:hover {
       transform: scale(1.1);
@@ -52,7 +51,7 @@
     }
     @include respond(phone) {
       width: 100%;
-      height: 25rem;
+      //height: 25rem;
     }
   }
 }
