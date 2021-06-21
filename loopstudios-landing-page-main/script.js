@@ -24,7 +24,7 @@ function abb(ee) {
   `;
 
     li.innerHTML = `
-    <img class="card__img" style="${styleImage}"/>
+    <img class="card__img" style="${styleImage}" alt="${name}"/>
     <p class="card__text heading-tertiary">${name}</p>
   `;
     lists.appendChild(li);
