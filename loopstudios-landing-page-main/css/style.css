@@ -279,6 +279,8 @@ body {
     -webkit-transform: rotate(-135deg);
     transform: rotate(-135deg);
   }*/ }
+  .nav__hamburger {
+    display: none; }
   .nav__checkbox {
     display: none; }
   .nav__icon {
