@@ -1,4 +1,7 @@
 import { projects } from "./projects.js";
+const titleSub = document.querySelector(".titleSub");
+
+titleSub.innerHTML = `${projects.length} Projects`;
 
 const list = document.getElementById("list");
 
