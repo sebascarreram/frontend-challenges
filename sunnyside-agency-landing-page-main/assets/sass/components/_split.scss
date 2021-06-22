@@ -1,0 +1,45 @@
+.split {
+  height: 60rem;
+  width: 50%;
+  z-index: 1;
+  overflow-x: hidden;
+  position: relative;
+
+  &--center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &--bottom{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  &--left {
+    left: 0;
+    //    background-color: red;
+  }
+  &--right {
+    right: 0;
+    //    background-color: green;
+  }
+
+  &--background {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &-1 {
+      background-image: url("./../../../assets/images/desktop/image-transform.jpg");
+    }
+    &-2 {
+      background-image: url("./../../../assets/images/desktop/image-stand-out.jpg");
+    }
+    &-3 {
+      background-image: url("./../../../assets/images/desktop/image-graphic-design.jpg");
+    }
+    &-4 {
+      background-image: url("./../../../assets/images/desktop/image-photography.jpg");
+    }
+  }
+}

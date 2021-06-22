@@ -1,0 +1,61 @@
+body {
+  line-height: 1.7;
+}
+
+.heading-primary {
+  display: inline-block;
+  &--main {
+    font-family: "Fraunces", serif;
+    font-size: 5.5rem;
+    font-weight: 700;
+    line-height: 0.95;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 100%);
+
+    @include respond(phone) {
+      //font-size: 4rem;
+    }
+  }
+}
+// h2
+.heading-secondary {
+  font-family: "Fraunces", serif;
+  font-size: 4rem;
+  font-weight: 900;
+  display: inline-block;
+  line-height: 1.1;
+
+  @include respond(phone) {
+    line-height: 1.2;
+    letter-spacing: 0.4rem;
+  }
+}
+// h3
+.heading-tertiary {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1;
+  display: inline-block;
+
+  font-family: "Fraunces", serif;
+
+  &--graphic {
+    color: hsl(167, 40%, 24%);
+  }
+  &--photography {
+    color: hsl(198, 62%, 26%);
+  }
+}
+
+.paragraph {
+  font-size: 1.6rem;
+  color: hsl(213, 9%, 39%);
+
+  &--graphic {
+    color: #25564bb3;
+  }
+  &--photography {
+    color: #19536bb3;
+  }
+}
