@@ -165,7 +165,8 @@ body {
   background-repeat: no-repeat;
   height: 70rem;
   background-size: cover;
-  background-position: bottom; }
+  background-position: bottom;
+  background-attachment: fixed; }
   .header__text-box {
     display: flex;
     flex-direction: column;
