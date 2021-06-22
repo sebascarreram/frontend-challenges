@@ -73,4 +73,8 @@ export const projects = [
     name: "loopstudios-landing-page-main",
     github_url: `${url}/loopstudios-landing-page-main`,
   },
+  {
+    name: "sunnyside-agency-landing-page-main",
+    github_url: `${url}/sunnyside-agency-landing-page-main`,
+  },
 ];
