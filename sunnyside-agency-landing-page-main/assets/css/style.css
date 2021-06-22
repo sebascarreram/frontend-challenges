@@ -150,13 +150,13 @@ body {
     background-position: center;
     background-size: cover; }
     .split--background-1 {
-      background-image: url("./../../../assets/images/desktop/image-transform.jpg"); }
+      background-image: url("./../../assets/images/desktop/image-transform.jpg"); }
     .split--background-2 {
-      background-image: url("./../../../assets/images/desktop/image-stand-out.jpg"); }
+      background-image: url("./../../assets/images/desktop/image-stand-out.jpg"); }
     .split--background-3 {
-      background-image: url("./../../../assets/images/desktop/image-graphic-design.jpg"); }
+      background-image: url("./../../assets/images/desktop/image-graphic-design.jpg"); }
     .split--background-4 {
-      background-image: url("./../../../assets/images/desktop/image-photography.jpg"); }
+      background-image: url("./../../assets/images/desktop/image-photography.jpg"); }
 
 .header {
   /*max-width: 1600px;
