@@ -129,6 +129,20 @@ body {
     .u-margin-bottom-big {
       margin-bottom: 5rem !important; } }
 
+.background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 55rem; }
+  .background-1 {
+    background-image: url("./../../assets/images/desktop/image-gallery-milkbottles.jpg"); }
+  .background-2 {
+    background-image: url("./../../assets/images/desktop/image-gallery-orange.jpg"); }
+  .background-3 {
+    background-image: url("./../../assets/images/desktop/image-gallery-cone.jpg"); }
+  .background-4 {
+    background-image: url("./../../assets/images/desktop/image-gallery-sugarcubes.jpg"); }
+
 .card {
   max-width: 45rem;
   padding: 5rem 1rem; }
@@ -152,6 +166,10 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center; }
+
+.row-1-of-4 {
+  float: left;
+  width: 25%; }
 
 .logo {
   cursor: pointer;
