@@ -65,12 +65,15 @@ body {
   font-weight: 700;
   font-size: 3rem;
   line-height: 1;
-  display: inline-block;
   font-family: "Fraunces", serif; }
   .heading-tertiary--graphic {
     color: #25564b; }
   .heading-tertiary--photography {
     color: #19536b; }
+  .heading-tertiary--testimonials {
+    color: #818498;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase; }
 
 .paragraph {
   font-size: 1.6rem;
@@ -79,6 +82,15 @@ body {
     color: #25564bb3; }
   .paragraph--photography {
     color: #19536bb3; }
+
+.testimonials__name {
+  font-size: 1.8rem;
+  font-family: "Fraunces", serif;
+  font-weight: 900; }
+
+.testimonials__title {
+  font-size: 1.5rem;
+  color: #a7abae; }
 
 .wrapper {
   margin: 0 auto;
@@ -122,6 +134,24 @@ body {
   padding: 5rem 1rem; }
   .card--center {
     text-align: center; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row--column {
+    float: left;
+    width: 33.33%;
+    height: 45rem;
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
 
 .logo {
   cursor: pointer;
@@ -196,5 +226,13 @@ body {
       border-radius: 2rem;
       text-transform: uppercase; }
 
-.section-1, .section-2, .section-3 {
+.section-1,
+.section-2,
+.section-3 {
   display: flex; }
+
+.section-testimonials {
+  padding: 20rem 0; }
+
+.testimonials__photo {
+  border-radius: 50%; }

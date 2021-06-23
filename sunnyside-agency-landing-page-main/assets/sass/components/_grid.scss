@@ -1,0 +1,23 @@
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+  //  padding: 0 20rem;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  &--column {
+    float: left;
+    width: 33.33%;
+    height: 45rem;
+    text-align: center;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

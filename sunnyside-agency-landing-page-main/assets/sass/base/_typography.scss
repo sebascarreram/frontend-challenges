@@ -36,7 +36,7 @@ body {
   font-weight: 700;
   font-size: 3rem;
   line-height: 1;
-  display: inline-block;
+  //display: inline-block;
 
   font-family: "Fraunces", serif;
 
@@ -45,6 +45,11 @@ body {
   }
   &--photography {
     color: hsl(198, 62%, 26%);
+  }
+  &--testimonials {
+    color: hsl(232, 10%, 55%);
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
   }
 }
 
@@ -57,5 +62,18 @@ body {
   }
   &--photography {
     color: #19536bb3;
+  }
+}
+
+.testimonials {
+  &__name {
+    font-size: 1.8rem;
+
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+  }
+  &__title {
+    font-size: 1.5rem;
+    color: hsl(210, 4%, 67%);
   }
 }
