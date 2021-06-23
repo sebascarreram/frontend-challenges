@@ -1,4 +1,8 @@
 .logo {
   cursor: pointer;
   z-index: 44;
+
+  &--bottom {
+    width: 17rem;
+  }
 }

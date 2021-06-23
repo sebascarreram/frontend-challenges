@@ -1,1 +1,14 @@
+.social{
+//  display: flex;
 
+
+  &__list{
+    display: flex;
+    list-style-type: none;
+  }
+  &__item{
+    &:not(:last-of-type){
+      margin-right: 3rem;
+    }
+  }
+}

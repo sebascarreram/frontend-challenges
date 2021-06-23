@@ -174,6 +174,15 @@ body {
 .logo {
   cursor: pointer;
   z-index: 44; }
+  .logo--bottom {
+    width: 17rem; }
+
+.social__list {
+  display: flex;
+  list-style-type: none; }
+
+.social__item:not(:last-of-type) {
+  margin-right: 3rem; }
 
 .split {
   height: 60rem;
@@ -206,6 +215,15 @@ body {
     .split--background-4 {
       background-image: url("./../../assets/images/desktop/image-photography.jpg"); }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7rem 0;
+  background-color: #5ec5b3; }
+  .footer__nav {
+    margin: 0 auto; }
+
 .header {
   /*max-width: 1600px;
   min-width: 500px;*/
@@ -233,8 +251,11 @@ body {
     margin-right: 2.5rem; }
   .nav__link {
     font-size: 1.7rem;
-    color: white;
     text-decoration: none; }
+    .nav__link--top {
+      color: white; }
+    .nav__link--footer {
+      color: #25564b; }
     .nav__link--btn {
       font-family: "Fraunces", serif;
       font-weight: 700;
@@ -251,6 +272,9 @@ body {
 
 .section-testimonials {
   padding: 20rem 0; }
+
+.section-photos {
+  height: 55rem; }
 
 .testimonials__photo {
   border-radius: 50%; }

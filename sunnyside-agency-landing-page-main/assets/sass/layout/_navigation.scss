@@ -16,8 +16,15 @@
   }
   &__link {
     font-size: 1.7rem;
-    color: hsl(0, 0%, 100%);
     text-decoration: none;
+
+    &--top {
+      color: hsl(0, 0%, 100%);
+    }
+    &--footer {
+      color: hsl(167, 40%, 24%);
+    }
+
     &--btn {
       font-family: "Fraunces", serif;
       font-weight: 700;
