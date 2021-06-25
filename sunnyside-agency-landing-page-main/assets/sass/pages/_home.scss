@@ -2,13 +2,25 @@
 .section-2,
 .section-3 {
   display: flex;
+
+  @include respond(phone) {
+    flex-direction: column;
+  }
 }
 .section-testimonials {
   padding: 20rem 0;
 }
-.section-photos {
-  height: 55rem;
-}
+
 .testimonials__photo {
   border-radius: 50%;
+}
+
+.section-photos {
+  height: 55rem;
+
+  @include respond(phone) {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
 }

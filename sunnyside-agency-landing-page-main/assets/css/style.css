@@ -94,7 +94,8 @@ body {
 
 .wrapper {
   margin: 0 auto;
-  max-width: 115rem; }
+  max-width: 115rem;
+  height: 100%; }
   @media only screen and (max-width: 56.25em) {
     .wrapper {
       margin: 0 1.5rem; } }
@@ -136,12 +137,24 @@ body {
   height: 55rem; }
   .background-1 {
     background-image: url("./../../assets/images/desktop/image-gallery-milkbottles.jpg"); }
+    @media only screen and (max-width: 37.5em) {
+      .background-1 {
+        background-image: url("./../../assets/images/mobile/image-gallery-milkbottles.jpg"); } }
   .background-2 {
     background-image: url("./../../assets/images/desktop/image-gallery-orange.jpg"); }
+    @media only screen and (max-width: 37.5em) {
+      .background-2 {
+        background-image: url("./../../assets/images/mobile/image-gallery-orange.jpg"); } }
   .background-3 {
     background-image: url("./../../assets/images/desktop/image-gallery-cone.jpg"); }
+    @media only screen and (max-width: 37.5em) {
+      .background-3 {
+        background-image: url("./../../assets/images/mobile/image-gallery-cone.jpg"); } }
   .background-4 {
     background-image: url("./../../assets/images/desktop/image-gallery-sugarcubes.jpg"); }
+    @media only screen and (max-width: 37.5em) {
+      .background-4 {
+        background-image: url("./../../assets/images/mobile/image-gallery-sugar-cubes.jpg"); } }
 
 .card {
   max-width: 45rem;
@@ -151,25 +164,39 @@ body {
 
 .row {
   max-width: 114rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: flex; }
   .row:after {
     content: "";
     display: table;
     clear: both; }
+  @media only screen and (max-width: 37.5em) {
+    .row {
+      flex-direction: column;
+      align-items: center; } }
   .row--column {
     float: left;
     width: 33.33%;
-    height: 45rem;
+    min-height: 60rem;
     text-align: center;
     padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center; }
+    @media only screen and (max-width: 37.5em) {
+      .row--column {
+        width: 100%;
+        min-height: 40rem; }
+        .row--column:not(:last-of-type) {
+          margin-bottom: 4rem; } }
 
 .row-1-of-4 {
   float: left;
   width: 25%; }
+  @media only screen and (max-width: 37.5em) {
+    .row-1-of-4 {
+      width: 100%; } }
 
 .logo {
   cursor: pointer;
@@ -190,6 +217,12 @@ body {
   z-index: 1;
   overflow-x: hidden;
   position: relative; }
+  @media only screen and (max-width: 56.25em) {
+    .split {
+      padding: 1rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .split {
+      width: 100%; } }
   .split--center {
     display: flex;
     justify-content: center;
@@ -233,6 +266,9 @@ body {
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed; }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      background-image: url(./../../assets/images/mobile/image-header.jpg); } }
   .header__text-box {
     display: flex;
     flex-direction: column;
@@ -244,6 +280,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (max-width: 37.5em) {
+    .nav--top {
+      display: none; } }
   .nav__list {
     display: flex;
     list-style-type: none; }
@@ -269,12 +308,22 @@ body {
 .section-2,
 .section-3 {
   display: flex; }
+  @media only screen and (max-width: 37.5em) {
+    .section-1,
+    .section-2,
+    .section-3 {
+      flex-direction: column; } }
 
 .section-testimonials {
   padding: 20rem 0; }
 
-.section-photos {
-  height: 55rem; }
-
 .testimonials__photo {
   border-radius: 50%; }
+
+.section-photos {
+  height: 55rem; }
+  @media only screen and (max-width: 37.5em) {
+    .section-photos {
+      display: flex;
+      flex-direction: column;
+      height: 100%; } }

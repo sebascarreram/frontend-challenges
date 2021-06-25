@@ -4,6 +4,11 @@
   justify-content: space-between;
   align-items: center;
 
+  &--top {
+    @include respond(phone) {
+      display: none;
+    }
+  }
   &__list {
     display: flex;
     list-style-type: none;

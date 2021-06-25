@@ -5,14 +5,30 @@
   height: 55rem;
   &-1 {
     background-image: url("./../../assets/images/desktop/image-gallery-milkbottles.jpg");
+
+    @include respond(phone) {
+      background-image: url("./../../assets/images/mobile/image-gallery-milkbottles.jpg");
+    }
   }
   &-2 {
     background-image: url("./../../assets/images/desktop/image-gallery-orange.jpg");
+
+    @include respond(phone) {
+      background-image: url("./../../assets/images/mobile/image-gallery-orange.jpg");
+    }
   }
   &-3 {
     background-image: url("./../../assets/images/desktop/image-gallery-cone.jpg");
+
+    @include respond(phone) {
+      background-image: url("./../../assets/images/mobile/image-gallery-cone.jpg");
+    }
   }
   &-4 {
     background-image: url("./../../assets/images/desktop/image-gallery-sugarcubes.jpg");
+
+    @include respond(phone) {
+      background-image: url("./../../assets/images/mobile/image-gallery-sugar-cubes.jpg");
+    }
   }
 }

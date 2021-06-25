@@ -8,6 +8,10 @@
   background-position: bottom;
   background-attachment: fixed;
 
+  @include respond(phone) {
+    background-image: url(./../../assets/images/mobile/image-header.jpg);
+  }
+
   &__text-box {
     display: flex;
     flex-direction: column;

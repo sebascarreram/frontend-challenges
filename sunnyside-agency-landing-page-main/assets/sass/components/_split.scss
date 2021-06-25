@@ -5,6 +5,14 @@
   overflow-x: hidden;
   position: relative;
 
+  @include respond(tab-port){
+    padding: 1rem;
+  }
+
+  @include respond(phone){
+    width: 100%;
+  }
+
   &--center {
     display: flex;
     justify-content: center;
