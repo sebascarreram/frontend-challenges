@@ -4,27 +4,95 @@
   justify-content: space-between;
   align-items: center;
 
-  &--top {
+  @include respond(phone) {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+
+  &--hamburger {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-image: url("./../images/icon-hamburger.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 4rem;
+    width: 4rem;
+    cursor: pointer;
+    z-index: 99999;
     @include respond(phone) {
-      display: none;
+      display: block;
+    }
+  }
+
+  &--top {
+    display: none;
+    @include respond(phone) {
+      width: 35rem;
+      position: absolute;
+      background-color: #fff;
+      padding: 4rem 1em;
+      margin-top: 7rem;
+      right: 0;
+      z-index: 888;
+
+      &::before {
+        content: " ";
+        position: absolute;
+        right: -1px;
+        top: -13px;
+        border-bottom: 15px solid #fff;
+        border-right: 15px solid transparent;
+        border-left: 15px solid transparent;
+        border-top: none;
+      }
+    }
+
+    &--open {
+      display: block;
     }
   }
   &__list {
     display: flex;
     list-style-type: none;
+    align-items: center;
+
+    &--top {
+      @include respond(phone) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
   }
 
   &__item {
     &:not(:last-of-type) {
       margin-right: 2.5rem;
     }
+
+    &--top {
+      @include respond(phone) {
+        margin-right: 0 !important;
+        margin-bottom: 4rem;
+      }
+    }
   }
+
   &__link {
     font-size: 1.7rem;
     text-decoration: none;
 
     &--top {
       color: hsl(0, 0%, 100%);
+
+      @include respond(phone) {
+        color: #000;
+      }
     }
     &--footer {
       color: hsl(167, 40%, 24%);

@@ -11,6 +11,7 @@
   @include respond(phone) {
     background-image: url(./../../assets/images/mobile/image-header.jpg);
     background-attachment: inherit;
+    position: relative;
   }
 
   &__text-box {
@@ -18,6 +19,14 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+
+    @include respond(phone) {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+    }
   }
   &__arrow {
   }
