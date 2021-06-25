@@ -268,7 +268,8 @@ body {
   background-attachment: fixed; }
   @media only screen and (max-width: 37.5em) {
     .header {
-      background-image: url(./../../assets/images/mobile/image-header.jpg); } }
+      background-image: url(./../../assets/images/mobile/image-header.jpg);
+      background-attachment: inherit; } }
   .header__text-box {
     display: flex;
     flex-direction: column;
