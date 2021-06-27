@@ -30,8 +30,9 @@
   }
 
   &--top {
-    display: none;
+    //    display: none;
     @include respond(phone) {
+      display: none;
       width: 35rem;
       position: absolute;
       background-color: #fff;
